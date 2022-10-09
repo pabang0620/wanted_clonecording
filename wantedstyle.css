@@ -123,6 +123,7 @@ section{
 
 .section2 div h2{
     display: flex;
+    align-items: center;
 }
 .title2{
     width: 1060px;
@@ -194,18 +195,70 @@ section{
 .for_clean1{
     display: flex;
     padding: 0px;
+    margin-bottom: 50px;
 }
 /* 두번째 세션 끝 */
+
+.for_center1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.more_info{
+    background-color: white;
+    border-radius: 22px;
+    width: 345px;
+    height: 50px;
+    margin: 0px 357.5px 50px;
+    padding: 0px 27px;
+    border : solid 0.2px #808080;
+}
+.more_info:hover{
+    cursor: pointer;
+}
+.more_info span{
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+}
+.mini_button button{
+    background-color: rgb(61, 61, 224);
+    border-radius: 50px;
+    width: 1060px;
+    height: 64px;
+    padding: 21px 30px;
+    border-color: white;
+}
+
+.mini_button span{
+    font-family: 'Pretendard-Regular';
+    color: white;
+    font-size: 17px;
+    align-items: center;
+}
+
+
+
 /*세번째 세션 수정*/
+.for_test_and_margin .img_news{
+    margin-top: 0px;
+}
 
 
-
-
-
-
-
-
-
+/* 중간 아래쪽  */
+.for_flex{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.img_size4 img{
+    width: 522px;
+    height: 273px;
+}
+.button_tag button{
+    border : white;
+    width: 500px;
+    background-color: white;
+}
 
 
 
