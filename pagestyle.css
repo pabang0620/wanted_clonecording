@@ -1,0 +1,442 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    font-family: 'Pretendard-Regular';
+    /* overflow-x: hidden  ; */
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style : none;
+}
+.nav_size{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.navbar{
+    position: fixed;
+    width: 1260px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    margin:auto;
+}
+.main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.main img{
+    width: 17px;
+    height: 14px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.main a img{
+    width: 90px;
+    height: 25px;
+}
+.main p{
+    font-size: 21px;
+    align-items: center;
+}
+.nav_menu{
+    font-size: 14px;
+    padding: 0px;
+    display: flex;
+}
+.nav_menu a{
+    display: inline-block;
+    padding: 15px;
+    color: #333333;
+}
+.nav_menu a:hover{
+    border-bottom: 1.5px solid gray;
+}
+.nav_service ul{
+    align-items: center;
+    padding: 0px 10px;
+}
+.nav_service li{
+    display: inline-block;
+    width: auto;
+}
+#service a{
+    padding: 5px 10px;
+}
+.nav_service button{
+    padding : 0px 5px;
+    border: none;
+    background-color: white;
+    cursor:pointer
+}
+
+#join{
+    font-size: 14px;
+    padding: 0px 3px;
+}
+#service a{
+    color: gray;
+    align-items: center;
+    display: center;
+    justify-self: center;
+    font-size: 13px;
+    border :0.5px solid gray;
+    line-height: 30px;
+    border-radius: 15px;
+}
+#nothing{
+    color: gray;
+    font-size: 3px;
+    margin : 0px 15px 0px 15px;
+}
+
+/* ================================================================= */
+/* 센터 */
+
+.for_sticy{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 80px;
+    width: auto;
+}
+
+
+
+.big_pha{
+    width: 700px;
+}
+.big_pha_img_set img{
+    width: 700px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+.big_pha_img_set{
+    display: flex;
+    overflow: hidden;
+    width: 700px;
+    height: 490px;
+    align-items: center;
+}
+.big_pha_second{
+    margin: 40px 0px 30px;
+}
+#big_pha_title1{
+    font-size: 22px;
+    margin: 0px 0px 10px;
+}
+.big_pha_second_mini{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.big_pha_second_mini li{
+    display: flex;
+    align-items: center;
+}
+
+.big_pha_second_mini a{
+    width: 48.41px;
+    height: 19.59px;
+    font-size: 14px;
+}
+.big_pha_second_mini span{
+    font-size: 10px;
+    color: #855AF0;
+    border: 0.5px solid #855AF0;
+    padding: 1px 5px;
+    margin: 0px 5px;
+}
+#mini_mini span{
+    border : white;
+    color: #999999;
+    font-size: 14px;
+}
+#mini_mini_mini span{
+    border : white;
+    color: #999999;
+    font-size: 4px;
+}
+
+/* 해시태크 버튼아이콘 */
+
+.big_pha_hashtag{
+    display: block;
+    margin-top: 20px;
+}
+.big_pha_hashtag button{
+    font-family: 'Pretendard-Regular';
+    border: white;
+    border-radius: 15px;
+    margin: 0px 6px 10px 0px;
+    padding: 9px 14px;
+    width: auto;
+    height: 30px;
+    display: inline-block;
+}
+.big_pha_hashtag button:hover{
+    cursor: pointer;
+}
+.big_pha_hashtag button span{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =================================================================
+버튼 해쉬태그 끝 */
+.big_pha_article_1{
+    font-size: 16px;
+    color: #333333;
+}
+h6{
+    font-size: 16px;
+    margin: 20px 0px 0px;
+}
+.big_pha_needed_skill{
+    display: block;
+    margin: 5px 0px 60px 0px;
+}
+.big_pha_needed_skill div{
+    display: inline-block;
+    background-color: #e4f4ec;
+    padding: 9px 14px;
+    color: #333333;
+    font-size: 12px;
+    font-family: 'Pretendard-Regular';
+    border-radius: 15px;
+}
+.big_pha_address{
+    display: block;
+
+}
+.big_pha_address div{
+    margin-bottom: 20px;
+    display: block;
+}
+#span_header{
+    font-size: 16px;
+    color: #999999;
+    font-family: 'Pretendard-Regular';
+    display: inline-block;
+    width: 80px;
+}
+#span_body{
+    font-family: 'Pretendard-Regular';
+    display: inline-block;
+}
+
+/* ===========================주소 끝 */
+.blue_bic{
+    display: flex;
+    flex-direction: column;
+}
+.blue_bic h5{
+    margin: 0px 0px 5px 0px;
+    padding: 0px 10px 0px 0px;
+    font-size: 15px;
+    font-family: 'Pretendard-Regular';
+}
+.blue_bic h6{
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Pretendard-Regular';
+    color: #999999;
+    padding-right: 10px;
+}
+.blue{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px;
+    border: 0.1px solid #dbdbdb;
+    border-radius: 3px;
+}
+.blue_right{
+    display: flex;
+    align-items: center;
+}
+.blue_right img{
+    margin-right:15px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.blue button{
+    height: 40px;
+    border: 0.1px solid #dbdbdb;
+    padding: 0px 27px;
+    background-color: #FFFFFF;
+    border-radius: 23px;
+}
+.blue button span{
+    font-size: 15px;
+    font-family: 'Pretendard-Regular';
+    color: #36f;
+}
+
+/* ===================================== */
+.size_of_last{
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 30px;
+    margin-top: 8px;
+}
+.readed_file{
+    display: flex;
+    width: 616px;
+    justify-content: space-between;
+}
+.readed_file p{
+    font-size: 12px;
+    font-family: 'Pretendard-Regular';
+    margin: 0px 20px;
+}
+.readed_file button{
+    width: 14px;
+    height: 20px;
+    border : #f0f0f0;
+}
+.readed_file button:hover{
+    cursor: pointer;
+}
+
+/* big_pha 끝 =================================================================== */
+
+/* 우측 스티키 */
+.move_box{
+    width: auto;
+    height: 264px;
+    padding: 24px 20px;
+    display: flex;
+    border: 0.1px solid #e4f4ec;
+    margin: 20px;
+}
+.move_box_first{
+    display: flex;
+    justify-content: space-between;
+    width: 298px;
+    height: 16.5px;
+}
+.move_box_first p{
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Pretendard-Regular';
+}
+.move_box_first button{
+    border: 0.1px solid #e4f4ec;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.move_box_val ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.move_box_val li{
+    display: flex;
+    flex-direction: column;
+    width: 149px;
+}
+.move_box_val h4{
+    margin-bottom: 8px;
+    color: #999999;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+}
+.move_box_val p{
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Pretendard-Regular';
+}
+.move_box_btst{
+    display: flex;
+    flex-direction: column;
+}
+#bt1{
+    display: flex;
+    justify-content: center;
+    width: 298px;
+    height: 50px;
+    border: 0.1px solid blue;
+    background-color: white;
+    border-radius: 40px;
+    align-items: center;
+    margin: 20px 0px 10px 0px;
+    padding: 1px 6px;
+}
+#bt2{
+    display: flex;
+    justify-content: center;
+    width: 298px;
+    height: 50px;
+    background-color: #3366ff;
+    border: white;
+    border-radius: 40px;
+    align-items: center;
+}
+#bt1 span{
+    color: blue;
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+}
+#bt2 span{
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+}
+.move_box_snslog{
+    display: flex;
+    align-items: center;
+    margin: 24px 0px 0px;
+    width: 298px;
+    height: 30px;
+}
+.move_box_snslog button{
+    border: 0.1px solid #e4f4ec;
+    border-radius: 15px;
+    margin-right: 12px;
+    padding: 0px 15px;
+    background-color: white;
+    width: 67px;
+    height: 30px;
+}
+.move_box_snslog span{
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
