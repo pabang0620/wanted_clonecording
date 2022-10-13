@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="./pagestyle.css"></link>
     <link rel="shortcut icon" type="image/x-icon" href="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90">
     <script src="https://kit.fontawesome.com/e53b58d3e2.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>     
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>     
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <script src="https://kit.fontawesome.com/e53b58d3e2.js" crossorigin="anonymous"></script>
+    <script src="./slick.js"></script>
 </head>
 
 <body>
@@ -41,6 +48,7 @@
             </nav>
         </div>
     </section>
+    <!-- ==================================================================== nav -->
     <section class="for_sticy">
         <section class="big_pha">
             <div class="big_pha_img_set">
@@ -285,7 +293,7 @@
             <div class = "blue">
                 <div class = "blue_right">
                     <div>
-                        <img src="./image/blue.png">
+                        <img src="../image/blue.png">
                     </div>
                     <div>
                         <div class = "blue_bic">
@@ -310,35 +318,258 @@
                 </div>
             </div>
         </section>
-        <section class = "move_box">
-            <div>
-                <div class = "move_box_first">
-                    <p>채용보상금</p>
-                    <button><i class="fa-solid fa-square-share-nodes"></i></button>
+
+        <!-- ============================================================ -->
+        <section class="position_sticky">
+            <section class = "move_box">
+                <div>
+                    <div class = "move_box_first">
+                        <p>채용보상금</p>
+                        <button><i class="fa-solid fa-square-share-nodes"></i></button>
+                    </div>
+                    <div class="move_box_val">
+                        <ul>
+                            <li>
+                                <h4>추천인</h4>
+                                <p>500,000원</p>
+                            </li>
+                            <li>
+                                <h4>지원자</h4>
+                                <p>500,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class ="move_box_btst">
+                        <button id = "bt1"><img src="../image/bookmark.png"><span>북마크하기</span></button>
+                        <button id = "bt2"><span>지원하기</span></button>
+                    </div>
+                    <div class="move_box_snslog">
+                        <button><i class="fa-regular fa-heart"></i> <span> 9</span></button>
+                        <img src="../image/likes_info.png">
+                    </div>
                 </div>
-                <div class="move_box_val">
-                    <ul>
-                        <li>
-                            <h4>추천인</h4>
-                            <p>500,000원</p>
-                        </li>
-                        <li>
-                            <h4>지원자</h4>
-                            <p>500,000원</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class ="move_box_btst">
-                    <button id = "bt1"><img src="/image/bookmark.png"><span>북마크하기</span></button>
-                    <button id = "bt2"><span>지원하기</span></button>
-                </div>
-                <div class="move_box_snslog">
-                    <button><i class="fa-regular fa-heart"></i> <span> 9</span></button>
-                    <img src="./image/likes_info.png">
-                </div>
-            </div>
+            </section>
         </section>
     </section>
+<!-- =================image_new start================================ -->
+
+    <section class="center_for_imgnews">
+        <div class="find_this_position">
+            <h5>이 포지션을 찾고 계셨나요?</h5>
+            <ul class = "img_new_flex">
+                    <li class = img_news_info>
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29774%2Fek5cikrrveydsggi__1080_790.jpg&w=1000&q=75">
+                        <div class = "img_news_padding">
+                            <div id = "img_news_first">프론트엔드 개발자</div>
+                            <div id = "img_news_second">파머스포터</div>
+                            <div id = "img_news_third">서울 &#183; 한국</div>
+                            <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                        </div>
+                    </li>
+                    <li class = img_news_info>
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F27748%2Fxezbeln8xgp0bjyi__1080_790.jpg&w=1000&q=75">
+                        <div class = "img_news_padding">
+                            <div id = "img_news_first">프론트엔드 개발자</div>
+                            <div id = "img_news_second">파머스포터</div>
+                            <div id = "img_news_third">서울 &#183; 한국</div>
+                            <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                        </div>
+                    </li>
+                    <li class = img_news_info>
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F12943%2Ft7mkeumvemojobsz__1080_790.jpg&w=1000&q=75">
+                        <div class = "img_news_padding">
+                            <div id = "img_news_first">프론트엔드 개발자</div>
+                            <div id = "img_news_second">파머스포터</div>
+                            <div id = "img_news_third">서울 &#183; 한국</div>
+                            <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                        </div>
+                    </li>
+                    <li class = img_news_info>
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30023%2Fccrtxlxmultggvak__1080_790.jpg&w=1000&q=75">
+                        <div class = "img_news_padding">
+                            <div id = "img_news_first">프론트엔드 개발자</div>
+                            <div id = "img_news_second">파머스포터</div>
+                            <div id = "img_news_third">서울 &#183; 한국</div>
+                            <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                        </div>
+                    </li>
+            </ul>
+            <ul class = "img_new_flex">
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F12146%2Fbauxmklzkdyo35br__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F12146%2Fbauxmklzkdyo35br__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32771%2Fa5jc4qtbnhdaeuus__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F25099%2Fyerrghahsyerj4dv__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+            </ul>
+            <ul class = "img_new_flex">
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31756%2Fmp1ct9da721ba8xf__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F13107%2Fqdyxwskfr1awfr1u__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F36849%2Fksgnccqbn8f0sukq__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1661%2F6033_2_0.97e194a1__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+            </ul>
+            <ul class = "img_new_flex">
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29552%2Fakprhsi6yzgigtzk__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30023%2Fxrdh7owdmxqsr8s0__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F12409%2Fkf0vo7o13iafazgu__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32771%2Fa5jc4qtbnhdaeuus__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+            </ul>
+            <ul class = "img_new_flex2">
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4967%2Ff3fdqplgdur4eawt__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+                <li class = img_news_info>
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F12409%2Fkf0vo7o13iafazgu__400_400.jpg&w=400&q=75">
+                    <div class = "img_news_padding">
+                        <div id = "img_news_first">프론트엔드 개발자</div>
+                        <div id = "img_news_second">파머스포터</div>
+                        <div id = "img_news_third">서울 &#183; 한국</div>
+                        <div id = "img_news_4th">채용보상금 1,000,000원</div>
+                    </div>
+                </li>
+        </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="last_div1">
+            <ul class="last_list">
+                <li><img src="../image/wanted.png"></li>
+                <li><a href="#">기업소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <ul class="sns_link">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
+                <li><a href="#"><img id="minipic" src="../image/naver_blog.png"></a></li>
+                <li><a href="#"><img id="minipic" src="../image/chat.png"></a></li>
+                <li><a href="#"><img id="minipic"
+                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_post.png&w=20&q=100"></a>
+                </li>
+                <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-play"></i></a></li>
+            </ul>
+        </div>
+        <div class="last_div2">
+            <p class="address">(주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 | 통신판매번호 :
+                2020-서울송파-3147<br>유료직업소개사업등록번호 : (국내) 제2020-3230259-14-5-00018호 | (국외) 서울동부-유-2020-2 | 사업자등록번호 :
+                299-86-00021 | 02-539-7118<br>&#169;Wantedlab, inc.</p>
+            <div>
+                <img src="../image/korea.png" alt="한국">
+                <select class="lang_select">
+                    <option value="0">한국(한국어)</option>
+                    <option value="1">일본어</option>
+                    <option value="2">영어</option>
+                    <option value="3">중국어</option>
+                </select>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>

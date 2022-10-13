@@ -2,7 +2,6 @@ body{
     margin: 0px;
     width: 100vw;
     font-family: 'Pretendard-Regular';
-    /* overflow-x: hidden  ; */
 }
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -20,20 +19,23 @@ ul{
 }
 .nav_size{
     width: 100vw;
+    height: 50px;
     display: flex;
     justify-content: center;
     background-color: white;
+    border-bottom: 0.1px solid #e4f4ec;
+    z-index: 800;
+    position: fixed;
 }
 .navbar{
-    position: fixed;
-    width: 1260px;
+    width: 1060px;
     height: 50px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
     margin:auto;
+    border-bottom: 0.1px solid #e4f4ec;
 }
 .main{
     justify-content: center;
@@ -112,10 +114,7 @@ ul{
     display: flex;
     justify-content: center;
     padding: 80px 0px 80px;
-    width: auto;
 }
-
-
 
 .big_pha{
     width: 700px;
@@ -286,6 +285,9 @@ h6{
     background-color: #FFFFFF;
     border-radius: 23px;
 }
+.blue button:hover{
+    cursor: pointer;
+}
 .blue button span{
     font-size: 15px;
     font-family: 'Pretendard-Regular';
@@ -323,11 +325,17 @@ h6{
 /* big_pha 끝 =================================================================== */
 
 /* 우측 스티키 */
+.position_sticky{
+    height: 400px;
+    overflow: auto;
+    position: sticky;
+    top: 70px;
+}
 .move_box{
+    border-radius: 15px;
     width: auto;
     height: 264px;
     padding: 24px 20px;
-    display: flex;
     border: 0.1px solid #e4f4ec;
     margin: 20px;
 }
@@ -374,6 +382,12 @@ h6{
 .move_box_btst{
     display: flex;
     flex-direction: column;
+}
+#bt1:hover{
+    cursor: pointer;
+}
+#bt2:hover{
+    cursor: pointer;
 }
 #bt1{
     display: flex;
@@ -423,20 +437,157 @@ h6{
     width: 67px;
     height: 30px;
 }
+.move_box_snslog button:hover{
+    cursor: pointer;
+}
 .move_box_snslog span{
     font-size: 14px;
     font-family: 'Pretendard-Regular';
 }
+.fixed_movebox{ 
+    display: flex;
+}
 
 
+/* ==================================================================================== */
+/* footer from 1weeks */
+footer{
+    width: 1060px;
+    margin: auto;
+    padding: 18px 0px 65px;
+}
 
+.last_div1{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.last_list{
+    display: flex;
+    padding: 0px;
+    width: 790px;
+    height: 39px;
+    align-items: center;
+}
+.last_list li{
+    margin-right: 45px;
+    font-size: 15px;
+}
 
+.sns_link{
+    width: 270px;
+    height: 39px;
+    display: flex;
+    padding: 0px;
+    justify-content: right;
+}
 
+.sns_link li{
+    margin-left: 14px;
+    color: gray;
+    width: 20px;
+    height: 20px;
+}
+.last_div2{
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px 0px 0px;
+}
 
+#minipic{
+    width: 20px;
+    height: 20px;
+}
 
+.address{
+    font-size: 12px;
+    margin-right: 40px;
+    color: #767676;
+}
 
+.lang_select{
+    height: 40px;
+    width: 200px;
+    padding: 0px 45px;
+    background-color: #f2f4f7;
+    border: none;
+}
 
+.last_div2 div{
+    height: 40px;
+    background-color: #f2f4f7;
+}
+/* ========================================================================
+이미지 뉴스 */
+.center_for_imgnews{
+    display: flex;
+    justify-content: center;
+}
+.find_this_position{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+    margin-top: 80px;
+}
+.find_this_position h5{
+    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+    margin: 0px 0px 20px;
+    width: 1060px;
+}
+.img_news_info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.img_news_info:hover{
+    cursor: pointer;
+}
+.img_news_info div{
+    display: flex;
+    flex-direction: column;
+}
+.img_news_padding{
+    padding: 14px 0px;
+}
+.img_news_info img{
+    width: 250px;
+    height: 187.5px;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
+#img_news_first{
+    font-size: 18px;
+    font-family: 'Pretendard-Regular';
+}
+#img_news_second{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+}
+#img_news_third{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+    color: #999999;
+}
+#img_news_4th{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+}
 
-
+.img_new_flex{
+    display: flex;
+    justify-content: center;
+}
+.img_new_flex2{
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+}

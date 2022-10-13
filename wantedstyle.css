@@ -55,21 +55,24 @@ a{
     color: black;
 }
 .nav_size{
-    width: auto;
+    width: 100vw;
+    height: 50px;
     display: flex;
     justify-content: center;
+    background-color: white;
+    border-bottom: 0.1px solid #e4f4ec;
+    z-index: 800;
+    position: fixed;
 }
 .navbar{
-    position: fixed;
     width: 1060px;
     height: 50px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
     margin:auto;
-
+    border-bottom: 0.1px solid #e4f4ec;
 }
 ul{
     list-style : none;
