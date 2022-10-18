@@ -1,11 +1,14 @@
-@import url('./css/bodyTest.css');
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
-
+body{
+    margin: 0px;
+    width: 100vw;
+    font-family: 'Pretendard-Regular';
+}
 a{
     text-decoration: none;
     color: black;
@@ -597,6 +600,7 @@ footer{
     margin: auto;
     display: flex;
     background-color: white;
+    z-index: 300;
 }
 .modal_top_img{
     display: flex;
@@ -645,19 +649,19 @@ footer{
     color: #666666;
 }
 /* ====================header============ */
-.modal_email{
+.modal_email2{
     display: flex;
     flex-direction: column;
     width: 360px;
     height: 101px;
     padding: 0px 0px 14px;
 }
-.modal_email label{
+.modal_email2 label{
     font-size: 14px;
     color: #767676;
     margin: 0px 0px 8px;
 }
-.modal_email input{
+.modal_email2 input{
     height: 50px;
     padding: 1px 15px;
     border : 1px solid #e4f4ec;
@@ -766,7 +770,6 @@ footer{
     right: 0;
     top: 0;
     bottom: 0;
-    
     display: none;
     z-index: 40;    
 }
@@ -816,6 +819,152 @@ modal_second */
     top: 0px;
     background-color : #ffffff;
     z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+/* =======================
+         */
+.modal_email{
+    display: flex;
+    flex-direction: column;
+    height: 784px;
+    width: 420px;
+    justify-content: center;
+    margin : auto;
+    top : 0;
+    z-index: 400;
+    background-color: white;
+}
+.modal_nav_header{
+    display: fixed;
+}
+.modal_email_header{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 20px;
+}
+.modal_email_header_center{
+    display: flex;
+    justify-content: center;
+    width: 230px;
+    height: 64px
+}
+.modal_email_header_center p{
+    font-size: 18px;
+    margin: 18px 0px;
+    margin-left: 80px;
+}
+.modal_email_header button{
+    margin : 0px 0px 5px 12px;
+    border : 1px solid white;
+    background-color: white;
+    font-size : 20px;
+}
+.modal_email_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.modal_email_display{
+    height: 784px;
+    position: sticky;
+    overflow: auto;
+}
+.modal_email_body input{
+    width: 332px;
+    height: 50px;
+    margin: 0px 0px 8px;
+    padding : 0px 12px;
+    border : 0.1px solid #e4f4ec;
+    background-color: white;
+    border-radius: 5px;
+}
+.disable input{
+    background-color: #f2f4f7;
+}
+.able input{
+    background-color: white;
+}
+.able input{
+    font-family: 'Pretendard-Regular';
+    color: #888888;
+    width: 195px;
+    height: 50px;
+    margin: 0px 0px 8px;
+    padding : 0px 12px;
+    border : 0.1px solid #e4f4ec;
+    background-color: white;
+    border-radius: 5px;
+}
+.able button{
+    height: 50px;
+    margin: 0px 0px 10px 10px;
+    padding : 0px 15px;
+    border : 0.1px solid #f2f4f7;
+    background-color: #f2f4f7;
+    border-radius: 5px;
+}
+.able button span{
+    color: #cccccc;
+    font-family: 'Pretendard-Regular';
+    font-size : 16px;
+}
+.margin_label{
+    margin: 17px 0px 7px
+}
+.margin_label label{
+    font-size: 14px;
+    color : #888888
+}
+#mini_p{
+    font-size: 13px;
+    margin: 0px 0px 10px;
+    color : #888888
+}
+.phone_number{
+    width: 358px;
+    height: 50px;
+    margin: 0px 0px 8px;
+    padding : 0px 12px;
+    border : 0.1px solid #f2f4f7;
+    background-color: white;
+    border-radius: 5px;
+}
+.email_checkbox input{
+    width: 20px;
+    height: 20px;
+    margin: 3px 3px 3px 4px;
+}
+.last_bt{
+    width: 358px;
+    height: 50px;
+    margin: 30px 0px 10px;
+    padding: 1px 6px;
+    background-color: #f2f4f7;
+    border: white;
+    border-radius : 30px;
+}
+.last_bt span{
+    font-size: 16px;
+    color : #888888;
+    font-family: 'Pretendard-Regular';
+}
+.modal_email_js{
+    width: auto;
+    position: fixed;
+    top : 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 500;
+}
+.center_of_modal{
+    width: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
 }

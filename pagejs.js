@@ -19,24 +19,33 @@ $(function(){
 
 function modalon(){
     var modal = document.querySelector(".modal_center");
+    const modalemail = document.querySelector(".modal_email_js");
+    const modalemail_bt = document.querySelector(".keep_join");
     modal.style.display = "block";
 
     var background = document.querySelector('.black');
 
     if(modal.style.display == 'block'){
-        console.log('!');
         document.body.style.overflow = 'hidden';
         
         background.addEventListener('click',function(){
             modal.style.display = 'none';
+    })    
+    if(modal.style.display = "block"){
+        modalemail_bt.addEventListener('click',function(){
+            modal.style.display = "hidden";
+            modalemail.style.display = 'block';
         })
     }
-
+    if(modalemail.style.display == 'block'){
+        document.body.style.overflow = 'hidden';
+        
+        background.addEventListener('click',function(){
+            modalemail.style.display = 'none';
+            })
+        }
+    }
 }
-// function modaloff(){
-//     const modal = document.querySelector(".modal_center")
-//     modal.style.display = "none"
-// }
 
 setTimeout(function(){
     const loadding = document.querySelector(".loading")
