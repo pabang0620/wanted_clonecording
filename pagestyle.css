@@ -8,6 +8,7 @@ body{
     margin: 0px;
     width: 100vw;
     font-family: 'Pretendard-Regular';
+    overflow-x:hidden;
 }
 a{
     text-decoration: none;
@@ -44,8 +45,7 @@ ul{
 .main img{
     width: 17px;
     height: 14px;
-    margin-right: 10px;
-    margin-top: 7px;
+    margin: -2px 15px 0px 0px;
 }
 .main a img{
     width: 90px;
@@ -114,7 +114,9 @@ ul{
     justify-content: center;
     padding: 80px 0px 80px;
 }
-
+/* .for_sticy:hover{
+    cursor: default;
+} */
 .big_pha{
     width: 700px;
 }
@@ -122,7 +124,7 @@ ul{
     width: 700px;
     object-fit: cover;
     display: block;
-    border-radius: 15px;
+    border-radius: 4px;
 }
 .big_pha_img_set{
     display: flex;
@@ -328,7 +330,7 @@ h6{
     height: 400px;
     overflow: auto;
     position: sticky;
-    top: 70px;
+    top: 60px;
 }
 .move_box{
     border-radius: 15px;
@@ -336,7 +338,7 @@ h6{
     height: 264px;
     padding: 24px 20px;
     border: 0.1px solid #e4f4ec;
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
 }
 .move_box_first{
     display: flex;
@@ -597,6 +599,7 @@ footer{
     flex-direction: column;
     border: 1px solid #e4f4ec;
     width: 400px;
+    height: 700px;
     margin: auto;
     display: flex;
     background-color: white;
@@ -765,20 +768,13 @@ footer{
 }
 
 .modal_center{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     display: none;
     z-index: 40;    
 }
 .modal_flex{
-    /* flex-direction: column; */
     border: 1px solid #e4f4ec;
     width: 400px;
     margin: auto;
-    /* display: flex; */
     background-color: white;
     position: absolute;
     left: 50%;
@@ -809,7 +805,7 @@ modal_second */
 
 
 
-
+/* 
 .loading{
     display: flex;
     width: 100%;
@@ -821,42 +817,56 @@ modal_second */
     z-index: 1000;
     justify-content: center;
     align-items: center;
-}
+} */
 /* =======================
          */
 .modal_email{
-    display: flex;
-    flex-direction: column;
-    height: 784px;
-    width: 420px;
-    justify-content: center;
-    margin : auto;
-    top : 0;
-    z-index: 400;
+    display:block;
+    border: 1px solid #e4f4ec;
+    width: 400px;
+    height: 700px;
+    margin: auto;
     background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%)  translateY(-50%);
+    z-index: 50;
 }
+
 .modal_nav_header{
     display: fixed;
 }
 .modal_email_header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0px;
     padding: 0px 20px;
+}
+.modal_email_js{
+    height: 700px;  
+    overflow-y: scroll;
 }
 .modal_email_header_center{
     display: flex;
     justify-content: center;
     width: 230px;
-    height: 64px
+    height: 64px;
 }
 .modal_email_header_center p{
     font-size: 18px;
     margin: 18px 0px;
-    margin-left: 80px;
+    font-family: 'Pretendard-Regular';
+}
+.close_icon{
+    padding: 2px;
+    margin-right: 5px;
+}
+.close_icon:hover{
+    cursor: pointer;
 }
 .modal_email_header button{
-    margin : 0px 0px 5px 12px;
     border : 1px solid white;
     background-color: white;
     font-size : 20px;
@@ -869,9 +879,9 @@ modal_second */
     padding: 20px;
 }
 .modal_email_display{
-    height: 784px;
+    height: 636px;
     position: sticky;
-    overflow: auto;
+    overflow-y: scroll;
 }
 .modal_email_body input{
     width: 332px;
@@ -933,11 +943,24 @@ modal_second */
     background-color: white;
     border-radius: 5px;
 }
-.email_checkbox input{
-    width: 20px;
-    height: 20px;
-    margin: 3px 3px 3px 4px;
+.email_checkbox{
+    width: 380px;
+    font-size: 14px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: #888888;
 }
+.email_checkbox input{
+    width: 15px;
+    height: 15px;
+    margin: 8px 3px 3px 4px;
+}
+#all_check{
+    border-bottom: 0.05px solid #bdbcbc;
+    padding-bottom: 7px;
+}
+
 .last_bt{
     width: 358px;
     height: 50px;
@@ -952,19 +975,29 @@ modal_second */
     color : #888888;
     font-family: 'Pretendard-Regular';
 }
-.modal_email_js{
-    width: auto;
-    position: fixed;
-    top : 5%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    z-index: 500;
-}
 .center_of_modal{
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* .spinner{
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+} */
+.modaloff_icon{
+    padding:  2px;
+}
+.modaloff_icon:hover{
+    cursor: pointer;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(1000deg);
+    }
+}
+
+.modal_all{
+    width: 420px ;
+    height: 800px;
 }
