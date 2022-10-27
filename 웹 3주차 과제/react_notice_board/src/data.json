@@ -1,0 +1,152 @@
+{
+  "company": [
+    {
+      "id": 0,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F27167%2F85boykpji4sg7qgc__400_400.jpg&w=400&q=75",
+      ",job": "MS 엔지니어",
+      "is": "티디지"
+    },
+    {
+      "id": 1,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F36292%2Feyeahn8rgihhi6si__400_400.jpg&w=400&q=75",
+      "job": "시니어 프론트엔드 개발자",
+      "is": "휴가중"
+    },
+    {
+      "id": 2,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F3020%2F10928_2_0.cc35a05e__400_400.jpg&w=400&q=75",
+      "job": "스프링 백엔드 개발(5년차)",
+      "is": "투어마케팅코리아"
+    },
+
+    {
+      "id": 3,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2297%2F8460_2_0.568dd034__400_400.jpg&w=400&q=75",
+      "job": "정보보안 SW 솔루션 QA 엔지니어",
+      "is": "소만사"
+    },
+
+    {
+      "id": 4,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
+      "job": "Nest.js 서버 개발자",
+      "is": "디엔소프트"
+    },
+    {
+      "id": 5,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29917%2Fbckqnec9j8kz9x5h__400_400.jpg&w=400&q=75",
+      "job": "네트워크 엔지니어",
+      "is": "에어키"
+    },
+    {
+      "id": 6,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F7027%2F6d2oqb64vvy6f7to__400_400.jpg&w=400&q=75",
+      "job": "MDM 솔루션 서비스 연동 및 개발",
+      "is": "마크애니"
+    },
+    {
+      "id": 7,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F33264%2Feo6an5psc6ymyfbz__400_400.jpg&w=400&q=75",
+      "job": "Android(안드로이드) 앱 개발자",
+      "is": "더시소"
+    },
+    {
+      "id": 8,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F33264%2Feo6an5psc6ymyfbz__400_400.jpg&w=400&q=75",
+      "job": "웹 기획자",
+      "is": "더시소"
+    },
+    {
+      "id": 9,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F9122%2Fmjisgz3ts7ivb6nn__400_400.png&w=400&q=75",
+      "job": "백엔드 개발자",
+      "is": "페어컴퍼니"
+    },
+    {
+      "id": 10,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fjhk6iry9ejxrp4uq__400_400.jpg&w=400&q=75",
+      "job": "웹/서버 팀장",
+      "is": "비주얼신"
+    },
+    {
+      "id": 11,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F14204%2Filsoxxnhmuxovjsx__400_400.jpg&w=400&q=75",
+      "job": "백엔드 서비스 개발자",
+      "is": "아이디어웨어"
+    },
+
+    {
+      "id": 12,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F33739%2Fo1muyet8rxgdo6bx__400_400.jpg&w=400&q=75",
+      "job": "백엔드 엔지니어",
+      "is": "폰디"
+    },
+    {
+      "id": 13,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F36994%2Fk41ke0v8nefu2ycx__400_400.jpg&w=400&q=75",
+      "job": "웹 풀스텍 개발자",
+      "is": "레전더리홀딩스"
+    },
+    {
+      "id": 14,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22646%2Fjhk6iry9ejxrp4uq__400_400.jpg&w=400&q=75",
+      "job": "안드로이드 앱 개발자(5년 이상)",
+      "is": "비주얼신"
+    },
+    {
+      "id": 15,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F24596%2Fjt7qznjiwal8folr__400_400.jpg&w=400&q=75",
+      "job": "Low Code 개발자",
+      "is": "윈드밀소프트"
+    },
+    {
+      "id": 16,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22811%2F2whzq0v1gjap7bss__400_400.jpg&w=400&q=75",
+      "job": "Network 엔지니어",
+      "is": "플랜티넷"
+    },
+    {
+      "id": 17,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F27694%2Fmc6jnohwctxnmt3p__400_400.jpg&w=400&q=75",
+      "job": "백엔드 개발자",
+      "is": "케이존"
+    },
+    {
+      "id": 18,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31934%2Ffyycbkntwz5iqcki__400_400.jpg&w=400&q=75",
+      "job": "프론트앤드 개발자",
+      "is": "긴트"
+    },
+    {
+      "id": 19,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F21539%2Ftoh64lqol001qgwi__400_400.jpg&w=400&q=75",
+      "job": "ASP.NET 선임개발자",
+      "is": "오엠티아이코리아"
+    },
+
+    {
+      "id": 20,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F27694%2Fmc6jnohwctxnmt3p__400_400.jpg&w=400&q=75",
+      "job": "시니어 백엔드 개발자(6년이상)",
+      "is": "케이존"
+    },
+    {
+      "id": 21,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31934%2Ffyycbkntwz5iqcki__400_400.jpg&w=400&q=75",
+      "job": "ASP.NET 신입 개발자",
+      "is": "오엠티아이코리아"
+    },
+    {
+      "id": 22,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32260%2Fnhio8coozluceqtu__400_400.jpeg&w=400&q=75",
+      "job": "프론트엔드 개발자",
+      "is": "아이비즈온"
+    },
+    {
+      "id": 23,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2738%2F10710_2_0.2bf10a62__400_400.jpg&w=400&q=75",
+      "job": "파이썬 개발자",
+      "is": "디토나인"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+button {
+  border: 1px solid white;
+}
+/* .withNav {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+} */
+.topMargin {
+  margin-top: 60px;
+}
+.header_article {
+  width: 100vw;
+  padding: 100px 0px 0px;
+}
+.header_article div {
+  width: 1060px;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  height: 32px;
+  margin: auto;
+}
+.header_article button {
+  background-color: white;
+  border: none;
+}
+.header_article p {
+  margin: 0px;
+  font-size: 24px;
+  padding: 3px 24px 0px;
+  color: #767676;
+}
+.header_article button span {
+  font-family: "Pretendard-Regular";
+  font-size: 24px;
+  margin: 0px 15.5px 0px 0px;
+  padding: 3px 0px 0px;
+}
+.header_article i:hover {
+  cursor: pointer;
+}
+.header_article_buttonflex {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 0.1px solid #e2e2e2;
+}
+.Header_article_buttoncenter {
+  display: flex;
+  justify-content: center;
+}
+.header_article_buttonflex button {
+  background-color: white;
+  padding: 1px 16px;
+  height: 40px;
+  border: 0.1px solid #e2e2e2;
+  border-radius: 5px;
+  margin-right: 9px;
+}
+.header_article_buttonflex_span {
+  margin-right: 10px;
+}
+.header_article_buttonflex span {
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+}
+.header_articleButton {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  border-bottom: 0.1px solid #e2e2e2;
+  padding-bottom: 25px;
+}
+.header_articleButton button {
+  height: 32px;
+  border-radius: 17px;
+  padding: 8px 14px;
+  margin-right: 8px;
+}
+.button_span {
+  font-family: "Pretendard-Regular";
+  font-size: 13px;
+}
+.header_articleButton button:nth-child(1) {
+  background-color: #f2fbf5;
+}
+.header_articleButton button:nth-child(2) {
+  background-color: #f3f9fe;
+}
+.header_articleButton button:nth-child(3) {
+  background-color: #f3f2fb;
+}
+.header_articleButton button:nth-child(4) {
+  background-color: #f6f8ee;
+}
+.header_articleButton button:nth-child(5) {
+  background-color: #f7f2f9;
+}
+.header_articleButton button:nth-child(6) {
+  background-color: #eefaf9;
+}
+.header_articleButton button:nth-child(7) {
+  background-color: #eff1fb;
+}
+.header_articleButton button:nth-child(8) {
+  background-color: #f2fbf5;
+}
+.header_articleButton button:nth-child(9) {
+  background-color: #f3f9fe;
+}
+
+.header_articleButton button:nth-child(10) {
+  background-color: #f3f2fb;
+}
+
+.header_articleButton button:nth-child(11) {
+  background-color: #f6f8ee;
+}
+
+.header_articleButton button:nth-child(12) {
+  background-color: #f7f2f9;
+}
+
+.header_articleButton button:nth-child(13) {
+  background-color: #eefaf9;
+}
+
+.header_articleButton button:nth-child(14) {
+  background-color: #eff1fb;
+}
+.ImgAds_boxsize {
+  width: 197px;
+  height: 124px;
+}
+.ImgAds_boxsize img {
+  width: 197px;
+  height: 143px;
+  overflow: hidden;
+}
+.ImgAds_boxsize div {
+  width: 197px;
+  height: 90px;
+  margin: 34px 16px 0px;
+}
+.ImgAds_boxsize footer {
+  width: 175px;
+  height: 90px;
+  padding: 15px 10px;
+  border: 1px solid #e2e2e2;
+}
+.ImgAds_boxsize h4 {
+  margin: 4px 0px;
+  font-size: 16px;
+  font-family: "Pretendard-regular";
+}
+.ImgAds_boxsize h5 {
+  margin: 6px 0px 0px;
+  color: #999999;
+  font-size: 14px;
+  font-family: "Pretendard-regular";
+}
+.ImgAdsFlex {
+  display: flex;
+  justify-content: center;
+}
+.ImgAdsborder {
+  margin: 0px 10px;
+}
+.TitleCenter {
+  width: 1060px;
+  display: flex;
+  background-color: white;
+  margin: 9px 0px 15px 0px;
+  font-size: 22px;
+  font-family: "Pretendard-regular";
+}
+.TitleCenterall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.TitleCentero {
+  display: flex;
+  justify-content: center;
+}
+.TitleCenter_button {
+  width: 1060px;
+  display: flex;
+  background-color: white;
+  margin: 40px 0px 20px 0px;
+  color: #36f;
+  font-size: 15px;
+  font-family: "Pretendard-regular";
+}
+.ImgNewsInfoFlex {
+  width: 1110px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.ImgNewsInfoFlexFlex {
+  display: flex;
+  justify-content: center;
+}
