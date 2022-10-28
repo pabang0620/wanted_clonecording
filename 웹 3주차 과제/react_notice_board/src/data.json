@@ -148,5 +148,128 @@
       "job": "파이썬 개발자",
       "is": "디토나인"
     }
+  ],
+
+  "headcompany": [
+    {
+      "id": 0,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F25912%2Feu3nk4q7gb3xdn2i__400_400.png&w=400&q=75",
+      "logo": "https://static.wanted.co.kr/images/wdes/0_5.cc4f3409.jpg",
+      "job": "데이터라이즈",
+      "is": "2개 포지션"
+    },
+    {
+      "id": 1,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F17806%2Fpozdk6s60xc9m1jj__400_400.jpg&w=400&q=75",
+      "logo": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.0814bd2d.jpg&w=100&q=75",
+      "job": "프렌클리",
+      "is": "8개 포지션"
+    },
+    {
+      "id": 2,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F3020%2F10928_2_0.cc35a05e__400_400.jpg&w=400&q=75",
+      "logo": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.5a7f975a.png&w=100&q=75",
+      "job": "트래블메이커스",
+      "is": "3개 포지션"
+    },
+
+    {
+      "id": 3,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2297%2F8460_2_0.568dd034__400_400.jpg&w=400&q=75",
+      "logo": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.34d7e4cb.jpg&w=100&q=75",
+      "job": "모스티스코프",
+      "is": "2개 포지션"
+    },
+
+    {
+      "id": 4,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F26557%2Fpsfaoso6gjvlilb1__400_400.jpeg&w=400&q=75",
+      "logo": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.303509f6.png&w=100&q=75",
+      "job": "게임듀오",
+      "is": "7개 포지션"
+    }
+  ],
+
+  "mainbutton": [
+    {
+      "id": 0,
+      "tag": "취업/이직"
+    },
+    {
+      "id": 1,
+      "tag": "조직문화"
+    },
+    {
+      "id": 2,
+      "tag": "회사생활"
+    },
+    {
+      "id": 3,
+      "tag": "인간관계"
+    },
+    {
+      "id": 4,
+      "tag": "커리어고민"
+    },
+    {
+      "id": 5,
+      "tag": "리더십"
+    },
+    {
+      "id": 6,
+      "tag": "IT기술"
+    },
+    {
+      "id": 7,
+      "tag": "라이프스타일"
+    },
+    {
+      "id": 8,
+      "tag": "브랜딩"
+    },
+    {
+      "id": 9,
+      "tag": "HR"
+    },
+    {
+      "id": 10,
+      "tag": "노무"
+    },
+    {
+      "id": 11,
+      "tag": "마케팅"
+    },
+    {
+      "id": 12,
+      "tag": "서비스기획"
+    },
+    {
+      "id": 13,
+      "tag": "콘텐츠제작"
+    },
+    {
+      "id": 14,
+      "tag": "개발"
+    },
+    {
+      "id": 15,
+      "tag": "UX/UI"
+    },
+    {
+      "id": 16,
+      "tag": "경영/전략"
+    },
+    {
+      "id": 17,
+      "tag": "MD"
+    },
+    {
+      "id": 18,
+      "tag": "디자인"
+    },
+    {
+      "id": 10,
+      "tag": "데이터"
+    }
   ]
 }

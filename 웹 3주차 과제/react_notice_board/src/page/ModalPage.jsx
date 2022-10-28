@@ -16,11 +16,13 @@ const ModalPage = ({ setModalPageopen }) => {
     <section className="modal_centeron">
       <section className="modal_flex">
         <div className="modal_top_img">
+          <div></div>
           <img src="image/wantedd.png" />
+          <div className="close_icon" onClick={CloseModal}>
+            <i className="fa-solid fa-xmark"></i>
+          </div>
         </div>
-        <div className="close_icon" onClick={CloseModal}>
-          <i className="fa-solid fa-xmark"></i>
-        </div>
+
         <div className="modal_all_flex">
           <div className="modal_header">
             <h1>

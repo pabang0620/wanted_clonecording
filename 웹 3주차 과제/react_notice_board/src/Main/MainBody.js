@@ -2,6 +2,7 @@ import React from "react";
 import ButtonMain from "./ButtonMain";
 import ImgNews from "./ImgNews";
 import FirstBigImg from "./FirstBigImg";
+import dummy from "../data.json";
 
 const MainBody = () => {
   return (
@@ -23,27 +24,9 @@ const MainBody = () => {
           </h2>
         </div>
         <div className="button_1">
-          <ButtonMain tag="취업/이직" />
-          <ButtonMain tag="조직문화" />
-          <ButtonMain tag="회사생활" />
-          <ButtonMain tag="인간관계" />
-          <ButtonMain tag="인간관계" />
-          <ButtonMain tag="커리어고민" />
-          <ButtonMain tag="리더십" />
-          <ButtonMain tag="IT기술" />
-          <ButtonMain tag="라이프스타일" />
-          <ButtonMain tag="브랜딩" />
-          <ButtonMain tag="HR" />
-          <ButtonMain tag="노무" />
-          <ButtonMain tag="마케팅" />
-          <ButtonMain tag="서비스기획" />
-          <ButtonMain tag="콘텐츠제작" />
-          <ButtonMain tag="개발" />
-          <ButtonMain tag="UX/UI" />
-          <ButtonMain tag="경영/전략" />
-          <ButtonMain tag="MD" />
-          <ButtonMain tag="디자인" />
-          <ButtonMain tag="데이터" />
+          {dummy.mainbutton.map((buttoninput) => (
+            <ButtonMain key={buttoninput.id} tag={buttoninput.tag} />
+          ))}
         </div>
 
         <ul className="for_clean1">

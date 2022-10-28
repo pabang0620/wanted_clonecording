@@ -1,8 +1,8 @@
 import React from "react";
 import "../App.css";
 import NavyAll from "../componants/NavyAll";
-import ImgNewsAll from "./ImgNewsAll";
 import BigPha from "./BigPha";
+import InfoImgNewsall from "../Info/InfoImgNewsall";
 
 const Main = () => {
   return (
@@ -54,10 +54,7 @@ const Main = () => {
       <section className="center_for_imgnews">
         <div className="find_this_position">
           <h5>이 포지션을 찾고 계셨나요?</h5>
-          <ImgNewsAll />
-          <ImgNewsAll />
-          <ImgNewsAll />
-          <ImgNewsAll />
+          <InfoImgNewsall />
         </div>
       </section>
     </div>

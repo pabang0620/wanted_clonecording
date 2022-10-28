@@ -1,0 +1,86 @@
+.searchmodalall {
+  width: 2020px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 40;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translateY(-9%) translateX(-66.5%);
+}
+.searchmodalheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchmodalheader input {
+  width: 964px;
+  height: 50px;
+  background-color: #f2f4f7;
+  border-radius: 25px;
+  border: none;
+  padding: 0px 36px 0px 60px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.searchmodalljustify {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  height: 25px;
+  margin: 35px 0px 40px 0px;
+}
+.searchmodalljustify2 {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  height: 25px;
+  margin: 0px 0px 80px 0px;
+}
+.searchmodalbody {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 25px;
+  margin: 15px 0px 0px 0px;
+}
+.searchmodalbody h6 {
+  height: 20px;
+  margin: 0px;
+  font-size: 14px;
+  color: black;
+  font-family: "Pretendard-regular";
+}
+.searchmodalbody p {
+  height: 20px;
+  margin: 0px;
+  font-size: 14px;
+  color: #767676;
+  font-family: "Pretendard-regular";
+}
+.searchmodalrow {
+  margin: 0px 0px 50px;
+  display: flex;
+  width: 1060px;
+}
+.searchmodalrow button {
+  height: 50px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  padding: 0px 26px;
+  background-color: #f2f4f7;
+  font-family: "Pretendard-regular";
+}
+.SearchIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-top: 19px;
+  margin-right: 2px;
+  align-items: center;
+}
+.SearchIcon:hover {
+  cursor: pointer;
+}

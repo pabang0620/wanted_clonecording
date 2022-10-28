@@ -3,14 +3,15 @@ import React from "react";
 import Nav from "../page/nav";
 import Modalon from "../page/Modalon.jsx";
 import { Link, useNavigate } from "react-router-dom";
+import Searchcom from "./Searchcom";
 
 const Navy_all = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const gotoPage = () => {
-  //     alert{"채용 상세페이지로 이동"};
-  //     navigate{"/page"}
-  // }
+  const gotoPage = () => {
+    alert("채용 상세페이지로 이동");
+    navigate("/page");
+  };
   return (
     <div>
       <section>
@@ -24,9 +25,9 @@ const Navy_all = () => {
             </div>
 
             <div className="nav_menu">
-              <Link to="/page">
+              <div onClick={gotoPage}>
                 <Nav tag="채용" />
-              </Link>
+              </div>
               <Nav tag="이벤트" />
               <Link to="/info">
                 <Nav tag="직군별 연봉" />
@@ -36,11 +37,10 @@ const Navy_all = () => {
               <Nav tag="프리랜서" />
               <Nav tag="AI 합격예측" />
             </div>
+
             <div className="nav_service">
+              <Searchcom />
               <ul>
-                <button>
-                  <i className="fa-solid fa-magnifying-glass"></i>
-                </button>
                 <Modalon />
                 <li id="nothing">|</li>
                 <li id="service">

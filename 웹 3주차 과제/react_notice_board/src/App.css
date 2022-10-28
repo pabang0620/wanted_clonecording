@@ -87,6 +87,9 @@ button:hover {
   display: inline-block;
   width: auto;
 }
+.nav_service {
+  display: flex;
+}
 #service a {
   padding: 5px 10px;
 }
@@ -546,7 +549,7 @@ footer {
 .find_this_position {
   display: flex;
   flex-direction: column;
-  width: 1080px;
+  width: 1120px;
   margin-top: 80px;
 }
 .find_this_position h5 {
@@ -556,8 +559,6 @@ footer {
   width: 1060px;
 }
 .img_news_info {
-  display: flex;
-  flex-direction: column;
   padding: 10px;
 }
 .img_news_info:hover {
@@ -622,7 +623,7 @@ footer {
 }
 .modal_top_img {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 54px;
   padding: 16px 20px;
@@ -630,7 +631,7 @@ footer {
 
 .modal_top_img img {
   width: 70px;
-  height: 16px;
+  height: 20px;
 }
 .modal_all_flex {
   display: flex;
@@ -869,8 +870,11 @@ modal_second */
   font-family: "Pretendard-Regular";
 }
 .close_icon {
+  width: 4px;
+  height: 4px;
   padding: 2px;
   margin-right: 5px;
+  margin-bottom: 12px;
 }
 .close_icon:hover {
   cursor: pointer;

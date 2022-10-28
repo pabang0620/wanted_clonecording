@@ -3,6 +3,7 @@ import "./InfoMain.css";
 import Buttonall from "./Buttonall";
 import ImgAds from "./ImgAds";
 import InfoImgNewsall from "./InfoImgNewsall";
+import dummy from "../data.json";
 
 const InfoMain = () => {
   return (
@@ -71,11 +72,15 @@ const InfoMain = () => {
           </div>
         </div>
         <div className="ImgAdsFlex">
-          <ImgAds />
-          <ImgAds />
-          <ImgAds />
-          <ImgAds />
-          <ImgAds />
+          {dummy.headcompany.map((headcompanyinfo) => (
+            <ImgAds
+              key={headcompanyinfo.id}
+              src={headcompanyinfo.src}
+              logo={headcompanyinfo.logo}
+              job={headcompanyinfo.job}
+              is={headcompanyinfo.is}
+            />
+          ))}
         </div>
       </div>
       <InfoImgNewsall />
