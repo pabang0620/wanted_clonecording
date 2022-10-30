@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button.js";
 import Big_img from "./big_img.jsx";
 import Stack from "./stack.jsx";
-
+import Kakaomap from "./Kakaomap.jsx";
 import Long_article from "./long_article";
 
 const BigPha = () => {
@@ -76,7 +76,7 @@ const BigPha = () => {
           </span>
         </div>
         <div>
-          <img src="image/maps.png" />
+          <Kakaomap />
         </div>
       </section>
 

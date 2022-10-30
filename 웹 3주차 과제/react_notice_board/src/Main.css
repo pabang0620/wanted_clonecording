@@ -67,52 +67,76 @@ ul {
 }
 /* 이미지 설명 출처 CSS*/
 
-.img_news {
-  display: flex;
-  width: 250px;
-  height: 316.59px;
-  margin: 50px 10px 10px 0px;
+.first_nomargin {
+  width: 260px;
 }
-
 .first_nomargin img {
   margin: 10px 10px 10px 0px;
+  object-fit: cover;
+}
+.img_news:hover {
+  cursor: pointer;
 }
 .img_news img {
   width: 250px;
-  height: 159.59px;
+  height: 175.59px;
+}
+.img_news {
+  display: flex;
+  justify-content: center;
 }
 .min_title1 {
   height: 24px;
-  font-size: 16px;
-  margin: 17px 0px 8px;
+  font-family: "pretendard-regular";
+  font-size: 18px;
+  margin: 5px 8px 5px;
   color: #333333;
 }
 .min_main1 {
   height: 42px;
   font-size: 13px;
-  margin: 0px;
+  margin: 23px 9px 0px;
   color: #aaaaaa;
+}
+.min_main2 {
+  height: 42px;
+  font-size: 13px;
+  margin: 30px 9px 0px;
+  color: #333333;
+}
+.min_main3 {
+  height: 42px;
+  font-size: 16px;
+  margin: 0px 9px 0px;
+  color: #333333;
 }
 .new_clean1 {
   display: flex;
-  margin: 12px 0px 0px;
+  margin: 0px 0px 0px;
   align-items: center;
 }
 .new_clean1 img {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 .new_clean1 p {
   font-size: 13px;
-  margin: 0px 0px 0px 10px;
+  margin: 17px 0px 0px 10px;
   color: #aaaaaa;
 }
-
+.imgnew_justifycenter {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .for_clean1 {
   display: flex;
   justify-content: center;
   padding: 0px;
   margin-bottom: 50px;
+  width: 1200px;
+  flex-wrap: wrap;
 }
 /* 두번째 세션 끝 */
 

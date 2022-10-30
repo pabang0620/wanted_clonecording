@@ -268,8 +268,122 @@
       "tag": "디자인"
     },
     {
-      "id": 10,
+      "id": 20,
       "tag": "데이터"
+    }
+  ],
+  "ImgNewdata": [
+    {
+      "id": 0,
+      "src": "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FrrY%2Fimage%2FkAv-JV4anRyoks26UX7N_Pf2HWQ.jpg&w=500&q=75",
+      "title": "GA4 경로 탐색 분석으로 사용자 여정 추적하기",
+      "article": "UA에서 가장 그럴싸하지만 실제로 활용 가치가 낮은 보고서를 고르라면, 수많은 후보 중에서...",
+      "from": "kayros"
+    },
+    {
+      "id": 1,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fi.ytimg.com%2Fvi%2FeBV6tAfekyw%2Fhqdefault.jpg%3Fsqp%3D-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg%3D%3D%26rs%3DAOn4CLCVR7nSj-y1cB5llhDf7JFEiNPkcA&w=500&q=75",
+      "title": "정부 데이터 API를 이용해서 가져오기",
+      "article": " ",
+      "from": "생활코딩"
+    },
+    {
+      "id": 2,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211218%2F6%2F33398540.jpg&w=500&q=75",
+      "title": "데이터사이언스와 오픈소스",
+      "article": "데이터사이언스 시대를 맞아 오픈소스와 공유데이터, 파이선과 R, 미래의 플랫폼에 대...",
+      "from": "이혜선"
+    },
+    {
+      "id": 3,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220401%2F8%2F41081144.jpg&w=500&q=75",
+      "title": "데이터가 흐르는 회사 만들기 with 앰플리튜드 - 성여운",
+      "article": "엠플리튜드를 활용해 '데이터가 흐르는 원티드'를 만들어나가고 있는 원티드...",
+      "from": "원티드랩 성여운"
+    },
+    {
+      "id": 4,
+      "src": "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2F1hte%2Fimage%2FgpTrinHX2JBGP_ANJFOUuy9OZKw.png&w=500&q=75",
+      "title": "데일리샷이 제품을 파는 방식.",
+      "article": "요즘 위스키를 즐기는 취미가 생겼다. 자기 전에 한잔 정도 향과 맛을 즐긴다. 그 과정에서...",
+      "from": "Shaun"
+    },
+    {
+      "id": 5,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210804%2F11%2F22962672.jpg&w=500&q=75",
+      "title": "잘나가는 마케터에게 필요한 재무와 데이터 - 김용훈",
+      "article": "진짜 성과를 내는 마케터는 뭐가 다를까? 펫프렌즈 CMO가 들려주는 마케터를 위한...",
+      "from": "펫프렌즈 김용훈"
+    },
+    {
+      "id": 6,
+      "src": "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FTgQ%2Fimage%2FfdkTmqEGC7fZ16vMpmpZztjLons.jpg&w=500&q=75",
+      "title": "사람들의 솔직한 생각을 어떻게 알 수 있을까?",
+      "article": "사람들의 솔직한 생각을 어떻게 알 수 있을까? 사람들은 자주 거짓말을 합니다. 다른...",
+      "from": "글쓰는 부엉이 J"
+    },
+    {
+      "id": 7,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211020%2F7%2F30889826.jpg&w=500&q=75",
+      "title": "트렌드를 만드는 숏폼 기획은 마케터의 필수 조건 - 뉴즈 김가현",
+      "article": "# 뉴스 채널 소개# 틱톡에서 IT, 테크 미디어가 되기로 결정한 계기와 시작 과정# 숏폼 콘텐츠...",
+      "from": "뉴즈"
+    }
+  ],
+  "secondimg": [
+    {
+      "id": 0,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2479%2Fa89e6bbc.jpg&w=800&q=75",
+      "title": "예비 CX 전문가를 위한 세 가지 전략",
+      "article": "#고객서비스 리테일 # 커리어고민 #CS/CX"
+    },
+    {
+      "id": 1,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2478%2Feff0764c.jpg&w=800&q=75",
+      "title": "카드뉴스, 어떻게 만들면 되나요?",
+      "article": "#디자인 #콘텐츠 제작 #회사생활"
+    },
+    {
+      "id": 2,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2466%2Fce876081.jpg&w=800&q=75",
+      "title": "CTO가 말하는 스타트업 개발자 생존 백서",
+      "article": "#개발 #커리어고민 #취업/이직"
+    },
+    {
+      "id": 3,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2494%2Fb1c66076.jpg&w=800&q=75",
+      "title": "스타트업으로 간 시니어가 부딪히는 어려움 세 가지",
+      "article": "#조직문화 #리더십 #경영 비지니스"
+    }
+  ],
+  "lastimg": [
+    {
+      "id": 0,
+      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210618%2F2%2F34753914.jpg&w=800&q=75",
+      "title": "노무법인 예담HT컨설팅 장내석",
+      "article": "회사를 구하는 인사",
+      "from": "회사를 구하는 인사 : Live Talk #27"
+    },
+    {
+      "id": 1,
+      "src": "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F32385576.jpg&w=800&q=75",
+      "title": "애프터모먼트 박창선",
+      "article": "터지는 콘텐츠는 이렇게 만듭니다 Part3 : 위트와 무리수레벨 조절하기 - 박...",
+      "from": "터지는 콘텐츠는 이렇게 만듭니다 : Wanted..."
+    },
+    {
+      "id": 2,
+      "src": "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210224%2F8%2F90123633.jpg&w=800&q=75",
+      "title": "원티드랩 류다현",
+      "article": "Wanted Talk Engineering #1: 테스트 코드와 배포 시스템 - 서버 배포 방식",
+      "from": "(무료) 테스트 코드와 배포 시스템:Wanted..."
+    },
+    {
+      "id": 3,
+      "src": "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210413%2F2%2F39565343.jpg&w=800&q=75",
+      "title": "전) 원티드랩 최보명",
+      "article": "포트폴리오를 부탁해",
+      "from": "[무료] 포트폴리오를 부탁해 by 원티드"
     }
   ]
 }

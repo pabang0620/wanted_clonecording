@@ -1,15 +1,24 @@
 import React from "react";
 import "./Searchmodal.css";
+import { useState } from "react";
 
 const Searchmodal = ({ setSearchModalon }) => {
   const CloseSearch = () => {
     setSearchModalon(false);
   };
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <div>
       <div className="searchmodalall">
         <div className="searchmodalheader">
-          <input type="text" placeholder="#태그, 회사, 포지션 검색" />
+          <input
+            type="text"
+            placeholder="#태그, 회사, 포지션 검색"
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+            }}
+          />
         </div>
         <section className="searchmodalljustify">
           <div className="searchmodalbody">

@@ -1,6 +1,8 @@
 import React from "react";
 import ButtonMain from "./ButtonMain";
 import ImgNews from "./ImgNews";
+import ImgNews2 from "./ImgNews2";
+import ImgNews3 from "./ImgNews3";
 import FirstBigImg from "./FirstBigImg";
 import dummy from "../data.json";
 
@@ -28,19 +30,19 @@ const MainBody = () => {
             <ButtonMain key={buttoninput.id} tag={buttoninput.tag} />
           ))}
         </div>
-
-        <ul className="for_clean1">
-          <ImgNews />
-          <ImgNews />
-          <ImgNews />
-          <ImgNews />
-        </ul>
-        <ul className="for_clean1">
-          <ImgNews />
-          <ImgNews />
-          <ImgNews />
-          <ImgNews />
-        </ul>
+        <div className="imgnew_justifycenter">
+          <ul className="for_clean1">
+            {dummy.ImgNewdata.map((newsdata) => (
+              <ImgNews
+                key={newsdata.id}
+                src={newsdata.src}
+                title={newsdata.title}
+                article={newsdata.article}
+                from={newsdata.from}
+              />
+            ))}
+          </ul>
+        </div>
       </section>
       <div className="for_center1">
         <button className="more_info">
@@ -53,12 +55,18 @@ const MainBody = () => {
           <div>
             <h2 className="title2">3분만에 읽는 Wanted+ 아티클</h2>
           </div>
-          <ul className="for_clean1">
-            <ImgNews />
-            <ImgNews />
-            <ImgNews />
-            <ImgNews />
-          </ul>
+          <div className="imgnew_justifycenter">
+            <ul className="for_clean1">
+              {dummy.secondimg.map((newsdataa) => (
+                <ImgNews2
+                  key={newsdataa.id}
+                  src={newsdataa.src}
+                  title={newsdataa.title}
+                  article={newsdataa.article}
+                />
+              ))}
+            </ul>
+          </div>
         </section>
       </div>
 
@@ -67,12 +75,19 @@ const MainBody = () => {
           <div>
             <h2 className="title2">직장인을 위한 Wanted+ VOD</h2>
           </div>
-          <ul className="for_clean1">
-            <ImgNews />
-            <ImgNews />
-            <ImgNews />
-            <ImgNews />
-          </ul>
+          <div className="imgnew_justifycenter">
+            <ul className="for_clean1">
+              {dummy.lastimg.map((newsdataaa) => (
+                <ImgNews3
+                  key={newsdataaa.id}
+                  src={newsdataaa.src}
+                  title={newsdataaa.title}
+                  article={newsdataaa.article}
+                  from={newsdataaa.from}
+                />
+              ))}
+            </ul>
+          </div>
         </section>
       </div>
       <section>
