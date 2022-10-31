@@ -11,6 +11,19 @@ const ModalPage = ({ setModalPageopen }) => {
   const Keeping = () => {
     setKeepEmail(true);
   };
+  // const [Email, setEmail] = useState("");
+
+  // const HandleEmail = (e) => {
+  //   setEmail(e.target.value);
+  //   const regex =
+  //     /^(([^<>()[].,;:\s@"]+(.[^<>()[].,;:\s@"]+))|(".+"))@(([^<>()[].,;:\s@"]+.)+[^<>()[].,;:\s@"]{2,})$/i;
+  //   if (regex.test(e.target.value)) {
+  //     setEmail = true;
+  //   } else {
+  //     regex.test(e.target.value);
+  //     setEmail = false;
+  //   }
+  // };
 
   return (
     <section className="modal_centeron">
@@ -38,14 +51,12 @@ const ModalPage = ({ setModalPageopen }) => {
           </div>
           <div className="modal_email_3">
             <div className="modal_email2">
-              <label type="email">이메일</label>
-              <input
-                type="email"
-                placeholder="이메일을 입력해 주세요."
-                id="email"
-                value
-              />
+              <label for="email">이메일</label>
+              <input id="email" placeholder="이메일을 입력해주세요" />
             </div>
+            {/* <div className="errorMessageWrapper">
+              <div>올바른 이메일을 입력해주세요</div>
+            </div> */}
           </div>
           <div className="modal_bt_style">
             <button onClick={Keeping} id="keep_join">

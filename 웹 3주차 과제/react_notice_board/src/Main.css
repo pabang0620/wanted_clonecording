@@ -3,7 +3,10 @@ body {
   width: 100vw;
   font-family: "Pretendard-Regular";
 }
-
+.slick-slider {
+  width: 1060px;
+  height: 300px;
+}
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -35,6 +38,7 @@ ul {
 .section2 div h2 {
   display: flex;
   align-items: center;
+  margin-top: 120px;
 }
 .title2 {
   height: 30px;
@@ -43,27 +47,31 @@ ul {
   display: flex;
 }
 .button_1 {
-  width: 20000px;
+  width: 1060px;
+  height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
 }
-.button_1 button {
+.button_1_button {
   font-family: "Pretendard-Regular";
   font-size: 15px;
   background-color: #ffffff;
-  /* height: 40px;    */
-  /* width: auto ;   */
   border: 1px solid #e1e2e3;
-  border-radius: 20px;
-  padding: 9px 22px;
+  border-radius: 40px;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
+  padding: 9px 13px;
+}
+.buttonCenter4 {
+  width: 100vw;
+  display: flex;
   justify-content: center;
 }
-.button_span {
+.button_1 span {
+  width: 78px;
   font-size: 15px;
-  color: #333333;
-  /* width: 51px; */
-  /* height: 21px; */
+  color: #888888;
+  height: 21.89px;
+  display: inherit;
 }
 /* 이미지 설명 출처 CSS*/
 

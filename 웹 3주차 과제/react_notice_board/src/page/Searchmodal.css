@@ -14,14 +14,16 @@
   justify-content: center;
 }
 .searchmodalheader input {
-  width: 964px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 50px;
+  width: 950px;
   height: 50px;
-  background-color: #f2f4f7;
   border-radius: 25px;
-  border: none;
-  padding: 0px 36px 0px 60px;
-  font-size: 15px;
-  margin-top: 30px;
+  border: white;
+  background-color: #f2f4f7;
+}
+.searchmodalheader i {
+  transform: translateX(200%) translateY(60%);
 }
 .searchmodalljustify {
   display: flex;

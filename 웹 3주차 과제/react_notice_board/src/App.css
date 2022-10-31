@@ -137,15 +137,11 @@ button:hover {
 .big_pha_img_set img {
   width: 700px;
   object-fit: cover;
-  display: block;
   border-radius: 4px;
 }
 .big_pha_img_set {
-  display: flex;
-  overflow: hidden;
   width: 700px;
   height: 490px;
-  align-items: center;
 }
 .big_pha_second {
   margin: 40px 0px 30px;

@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonInfo from "./ButtonInfo";
+import Slider from "react-slick";
 
 const Buttonall = () => {
   return (

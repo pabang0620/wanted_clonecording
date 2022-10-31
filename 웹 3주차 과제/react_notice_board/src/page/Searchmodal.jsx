@@ -12,6 +12,7 @@ const Searchmodal = ({ setSearchModalon }) => {
     <div>
       <div className="searchmodalall">
         <div className="searchmodalheader">
+          <i class="fa-solid fa-magnifying-glass"></i>
           <input
             type="text"
             placeholder="#태그, 회사, 포지션 검색"

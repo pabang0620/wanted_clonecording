@@ -5,17 +5,39 @@ import ImgNews2 from "./ImgNews2";
 import ImgNews3 from "./ImgNews3";
 import FirstBigImg from "./FirstBigImg";
 import dummy from "../data.json";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const MainBody = () => {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: true,
+    variableWidth: true,
+  };
+  const settings3 = {
+    infinite: true,
+    slidesToShow: 9,
+    slidesToScroll: 3,
+    autoplay: false,
+    slide: "button",
+    arrows: true,
+  };
   return (
     <div>
       <section className="section1">
         <div className="first_image">
-          <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1803%2F0907f393.jpg&w=1060&q=100" />
-          <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1825%2Fb93ecf4e.jpg&w=1060&q=100" />
-          <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" />
-          <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1853%2F2464b111.jpg&w=1060&q=100" />
-          <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1852%2F41073f1a.jpg&w=1060&q=100" />
+          <Slider {...settings}>
+            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1803%2F0907f393.jpg&w=1060&q=100" />
+            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1825%2Fb93ecf4e.jpg&w=1060&q=100" />
+            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" />
+            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1853%2F2464b111.jpg&w=1060&q=100" />
+            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1852%2F41073f1a.jpg&w=1060&q=100" />
+          </Slider>
         </div>
       </section>
       <section className="section2">
@@ -25,10 +47,14 @@ const MainBody = () => {
             <i className="fa-regular fa-circle-question"></i>
           </h2>
         </div>
-        <div className="button_1">
-          {dummy.mainbutton.map((buttoninput) => (
-            <ButtonMain key={buttoninput.id} tag={buttoninput.tag} />
-          ))}
+        <div className="buttonCenter4">
+          <div className="button_1">
+            <Slider {...settings3}>
+              {dummy.mainbutton.map((buttoninput) => (
+                <ButtonMain key={buttoninput.id} tag={buttoninput.tag} />
+              ))}
+            </Slider>
+          </div>
         </div>
         <div className="imgnew_justifycenter">
           <ul className="for_clean1">
