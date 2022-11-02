@@ -1,30 +1,45 @@
 import React from "react";
 import "./Modalon";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalEmail from "./ModalEmail";
 
 const ModalPage = ({ setModalPageopen }) => {
   const CloseModal = () => {
     setModalPageopen(false);
   };
+  // 모달 끄기
   const [KeepEmail, setKeepEmail] = useState(false);
   const Keeping = () => {
     setKeepEmail(true);
   };
-  // const [Email, setEmail] = useState("");
+  // 이메일로 계속하기 클릭시 모달 옮김
+  const [checkEmailvalue, setCheckEmailvalue] = useState("");
 
-  // const HandleEmail = (e) => {
-  //   setEmail(e.target.value);
-  //   const regex =
-  //     /^(([^<>()[].,;:\s@"]+(.[^<>()[].,;:\s@"]+))|(".+"))@(([^<>()[].,;:\s@"]+.)+[^<>()[].,;:\s@"]{2,})$/i;
-  //   if (regex.test(e.target.value)) {
-  //     setEmail = true;
-  //   } else {
-  //     regex.test(e.target.value);
-  //     setEmail = false;
-  //   }
-  // };
+  const [emailstatus, setEmailstatus] = useState(false);
 
+  const Emailstatuschange = (e) => {
+    //e가 정확하게 뭔지..
+    setCheckEmailvalue(e.target.value);
+    const Regex =
+      /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+    if (Regex.test(e.target.value)) {
+      // if() 를 쓰면 괄호 안의 값은 기본값이 true 인가요?
+      setEmailstatus(true);
+    } else {
+      setEmailstatus(false);
+    }
+  };
+
+  // useEffect 는 범위 지정이 없나요?  저렇게 정의하는게 맞나요? 어디에 쓰는건가요
+  const [notAllow, setNotAllow] = useState(true);
+  useEffect(() => {
+    if (emailstatus) {
+      //emailstatus 가 트루이면 false로 바꿔라 가 맞나?
+      setNotAllow(false);
+      return; // 여기 리턴이랑 추가 코드는 왜 무슨 용도?
+    }
+    setNotAllow(true);
+  }, [emailstatus]);
   return (
     <section className="modal_centeron">
       <section className="modal_flex">
@@ -52,14 +67,22 @@ const ModalPage = ({ setModalPageopen }) => {
           <div className="modal_email_3">
             <div className="modal_email2">
               <label for="email">이메일</label>
-              <input id="email" placeholder="이메일을 입력해주세요" />
+              <input
+                value={checkEmailvalue}
+                type="email"
+                id="email"
+                placeholder="이메일을 입력해주세요"
+                onChange={Emailstatuschange}
+              />
+              <div className="errorMessageWrap">
+                {!emailstatus && checkEmailvalue.length > 0 && (
+                  <div>올바른 이메일을 입력해주세요.</div>
+                )}
+              </div>
             </div>
-            {/* <div className="errorMessageWrapper">
-              <div>올바른 이메일을 입력해주세요</div>
-            </div> */}
           </div>
           <div className="modal_bt_style">
-            <button onClick={Keeping} id="keep_join">
+            <button onClick={Keeping} id="keep_join" disabled={notAllow}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -78,7 +101,12 @@ const ModalPage = ({ setModalPageopen }) => {
               </svg>{" "}
               이메일로 계속하기
             </button>
-            {KeepEmail && <ModalEmail setModalPageopen={setModalPageopen} />}
+            {KeepEmail && (
+              <ModalEmail
+                setModalPageopen={setModalPageopen}
+                checkEmailvalue={checkEmailvalue}
+              />
+            )}
 
             <div id="modal_or">or</div>
             <div id="modal_next">다음 계정으로 계속하기</div>

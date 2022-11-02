@@ -1011,3 +1011,14 @@ modal_second */
 /* .keep_join {
   background-color: #1877f2;
 } */
+.errorMessageWrap {
+  margin-top: 2px;
+  color: red;
+  font-size: 14px;
+}
+.able button {
+  width: 122px;
+}
+.able {
+  display: flex;
+}

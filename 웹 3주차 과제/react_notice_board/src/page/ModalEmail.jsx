@@ -1,8 +1,8 @@
 import React from "react";
 
-const ModalEmail = ({ setModalPageopen }) => {
+const ModalEmail = (props) => {
   const CloseModal = () => {
-    setModalPageopen(false);
+    props.setModalPageopen(false);
   };
   return (
     <div>
@@ -28,7 +28,7 @@ const ModalEmail = ({ setModalPageopen }) => {
               <div className="margin_label">
                 <label>이메일</label>
               </div>
-              <input type="email" placeholder="none" />
+              <input placeholder={props.checkEmailvalue} disabled />
             </div>
             <div>
               <div className="margin_label">
@@ -45,7 +45,7 @@ const ModalEmail = ({ setModalPageopen }) => {
                 <option>Seoul +02</option>
               </select>
               <div className="able">
-                <input type="number" />
+                <input type="number" placeholder="(예시)01016895161" />
                 <button>
                   <span>인증번호 받기</span>
                 </button>
