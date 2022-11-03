@@ -1,9 +1,41 @@
 import React from "react";
+import Checkbox from "./CheckBox";
+import { useState, useEffect } from "react";
 
 const ModalEmail = (props) => {
   const CloseModal = () => {
     props.setModalPageopen(false);
   };
+  const [pwvalue, setPwvalue] = useState("");
+  const [repwvalue, setRevalue] = useState("");
+
+  const [pwstatus, setPwstatus] = useState(false);
+  const [repwstatus, setRepwstatus] = useState(false);
+  const repwstatuscheck = (e) => {
+    setRevalue(e.target.value);
+    if (repwvalue !== pwvalue) {
+      setRepwstatus(true);
+    } else {
+      setRepwstatus(false);
+    }
+  };
+  const pwstatuschange = (e) => {
+    setPwvalue(e.target.value);
+    const Regex = /^(?=.*[a-zA-Z])((?=.*\d)(?=.*\W)).{8,16}$/;
+    if (Regex.test(e.target.value)) {
+      setPwstatus(true);
+    } else {
+      setPwstatus(false);
+    }
+  };
+  // const [neverAllow, setNeverAllow] = useState(true);
+  // useEffect(() => {
+  //   if (pwstatus) {
+  //     setNeverAllow(false);
+  //     return;
+  //   }
+  //   setNeverAllow(true);
+  // }, [pwstatus]);
   return (
     <div>
       <section className="modal_email">
@@ -56,39 +88,35 @@ const ModalEmail = (props) => {
               <div className="margin_label">
                 <label>비밀번호</label>
               </div>
-              <input type="password" placeholder="비밀번호를 입력해주세요" />
               <input
+                value={pwvalue}
+                onChange={pwstatuschange}
+                type="password"
+                placeholder="비밀번호를 입력해주세요"
+              />
+              <div className="errorMessageWrap">
+                {!pwstatus && pwvalue.length > 0 && (
+                  <div>올바른 비밀번호를 입력해주세요.</div>
+                )}
+              </div>
+              <input
+                value={repwstatus}
+                onChange={repwstatuscheck}
                 type="password"
                 placeholder="비밀번호를 다시 한번 입력해주세요."
               />
+              <div className="errorMessageWrap">
+                {repwstatus && pwvalue.length > 0 && (
+                  <div>동일한 비밀번호를 입력해주세요.</div>
+                )}
+              </div>
               <p id="mini_p">
                 영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상
                 <br />
                 16자 이하로 입력해주세요.
               </p>
             </div>
-            <div className="email_checkbox">
-              <div id="all_check">
-                <input
-                  onclick="checkall()"
-                  className="checkbox_all"
-                  type="checkbox"
-                />
-                <label>전체동의</label>
-              </div>
-              <div>
-                <input className="check_select1" type="checkbox" />
-                <label>만 14세 이상입니다. (필수)</label>
-              </div>
-              <div>
-                <input className="check_select2" type="checkbox" />
-                <label>oneID 이용약관 동의 (필수)</label>
-              </div>
-              <div>
-                <input className="check_select3" type="checkbox" />
-                <label>개인정보 및 수집 이용 동의 (필수)</label>
-              </div>
-            </div>
+            <Checkbox />
             <button className="last_bt">
               <span>가입하기</span>
             </button>

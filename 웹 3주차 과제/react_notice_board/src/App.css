@@ -31,7 +31,7 @@ button:hover {
   justify-content: center;
   background-color: white;
   border-bottom: 0.1px solid #e4f4ec;
-  z-index: 20;
+  z-index: 40;
   position: fixed;
 }
 .navbar {
@@ -142,6 +142,7 @@ button:hover {
 .big_pha_img_set {
   width: 700px;
   height: 490px;
+  overflow: hidden;
 }
 .big_pha_second {
   margin: 40px 0px 30px;
@@ -779,11 +780,11 @@ footer {
 
 .modal_center {
   display: none;
-  z-index: 40;
+  z-index: 60;
 }
 .modal_centeron {
   display: flex;
-  z-index: 40;
+  z-index: 60;
 }
 
 .modal_flex {
@@ -953,7 +954,7 @@ modal_second */
   border-radius: 5px;
 }
 .email_checkbox {
-  width: 380px;
+  width: 342px;
   font-size: 14px;
   flex-direction: column;
   display: flex;
@@ -964,6 +965,9 @@ modal_second */
   width: 15px;
   height: 15px;
   margin: 8px 3px 3px 4px;
+}
+.email_checkbox label {
+  transform: translateX(6%) translateY(-120%);
 }
 #all_check {
   border-bottom: 0.05px solid #bdbcbc;

@@ -18,28 +18,37 @@ const ModalPage = ({ setModalPageopen }) => {
   const [emailstatus, setEmailstatus] = useState(false);
 
   const Emailstatuschange = (e) => {
-    //e가 정확하게 뭔지..
     setCheckEmailvalue(e.target.value);
     const Regex =
       /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
     if (Regex.test(e.target.value)) {
-      // if() 를 쓰면 괄호 안의 값은 기본값이 true 인가요?
       setEmailstatus(true);
     } else {
       setEmailstatus(false);
     }
   };
 
-  // useEffect 는 범위 지정이 없나요?  저렇게 정의하는게 맞나요? 어디에 쓰는건가요
+  // useEffect 는 범위 지정  저렇게 정의하는게 ? 어디 위치에 쓰는건가요
+  //페이지 나타날때[]
+  //데이터가 업데이트될때 [email]
+  //페이지가 사라질때
   const [notAllow, setNotAllow] = useState(true);
   useEffect(() => {
     if (emailstatus) {
-      //emailstatus 가 트루이면 false로 바꿔라 가 맞나?
+      //emailstatus 가 트루이면 false로 바꿔라 가 맞나? 맞다 if문 첫문장 기본값은 true
       setNotAllow(false);
-      return; // 여기 리턴이랑 추가 코드는 왜 무슨 용도?
+      return; // 여기 리턴이랑 추가 코드는 왜 무슨 용도? 탈출용도이다 탈출하지 않으면 계속 false 값
     }
     setNotAllow(true);
   }, [emailstatus]);
+
+  // useEffect(()=>{
+  //하고싶은것  return 내부값은 페이지가 사라질때
+  //   return(()=>{
+  //     console.log();
+  //   })
+  // },[])
+
   return (
     <section className="modal_centeron">
       <section className="modal_flex">
