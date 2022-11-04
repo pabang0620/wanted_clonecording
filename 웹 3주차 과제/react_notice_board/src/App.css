@@ -956,11 +956,14 @@ modal_second */
 .email_checkbox {
   width: 342px;
   font-size: 14px;
+  margin-bottom: 40px;
   flex-direction: column;
   display: flex;
   justify-content: center;
   color: #888888;
+  transform: translateX(-5%);
 }
+
 .email_checkbox input {
   width: 15px;
   height: 15px;
@@ -970,16 +973,24 @@ modal_second */
   transform: translateX(6%) translateY(-120%);
 }
 #all_check {
-  border-bottom: 0.05px solid #bdbcbc;
+  border-bottom: 0.1px solid #bdbcbc;
   padding-bottom: 7px;
 }
 
 .last_bt {
   width: 358px;
   height: 50px;
+  margin: 0px 0px 10px;
+  padding: 1px 6px;
+  border: white;
+  border-radius: 30px;
+}
+.lase_bt2 {
+  width: 358px;
+  height: 50px;
   margin: 30px 0px 10px;
   padding: 1px 6px;
-  background-color: #f2f4f7;
+  background-color: #3366ff;
   border: white;
   border-radius: 30px;
 }
@@ -1025,4 +1036,10 @@ modal_second */
 }
 .able {
   display: flex;
+}
+#getcodeblue {
+  background-color: #f0ecec;
+}
+#getcodeblue2 {
+  background-color: #3366ff;
 }

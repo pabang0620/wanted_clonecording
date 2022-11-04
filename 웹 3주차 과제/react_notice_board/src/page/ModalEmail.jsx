@@ -7,16 +7,41 @@ const ModalEmail = (props) => {
     props.setModalPageopen(false);
   };
   const [pwvalue, setPwvalue] = useState("");
-  const [repwvalue, setRevalue] = useState("");
+  const [repwvalue, setRepwvalue] = useState("");
+  const [idvalue, setIdvalue] = useState("");
+  const [numbervalue, setNumbervalue] = useState("");
 
   const [pwstatus, setPwstatus] = useState(false);
   const [repwstatus, setRepwstatus] = useState(false);
-  const repwstatuscheck = (e) => {
-    setRevalue(e.target.value);
-    if (repwvalue !== pwvalue) {
-      setRepwstatus(true);
+  const [idstatus, setIdstatus] = useState(false);
+  const [numberstatus, setNumberstatus] = useState(false);
+
+  const idstatuschange = (e) => {
+    setIdvalue(e.target.value);
+    const Regex = /^[가-힣]{2,15}$/;
+    if (Regex.test(e.target.value)) {
+      setIdstatus(true);
     } else {
+      setIdstatus(false);
+    }
+  };
+
+  const numberstatuschange = (e) => {
+    setNumbervalue(e.target.value);
+    const Regex = /01[016789]-[^0][0-9]{2,3}-[0-9]{3,4}/;
+    if (Regex.test(e.target.value)) {
+      setNumberstatus(true);
+    } else {
+      setNumberstatus(false);
+    }
+  };
+
+  const repwstatuscheck = (e) => {
+    setRepwvalue(e.target.value);
+    if (repwvalue === pwvalue) {
       setRepwstatus(false);
+    } else {
+      setRepwstatus(true); // ture 가 아니라 리턴을 주고 useeffect를 참고하여 해보야될거같음
     }
   };
   const pwstatuschange = (e) => {
@@ -28,14 +53,29 @@ const ModalEmail = (props) => {
       setPwstatus(false);
     }
   };
-  // const [neverAllow, setNeverAllow] = useState(true);
-  // useEffect(() => {
-  //   if (pwstatus) {
-  //     setNeverAllow(false);
-  //     return;
-  //   }
-  //   setNeverAllow(true);
-  // }, [pwstatus]);
+  const [getCode, setgetCode] = useState(true);
+  useEffect(() => {
+    if (numberstatus) {
+      setgetCode(false);
+      return;
+    }
+    setgetCode(true);
+  }, [numberstatus]);
+
+  const [neverAllow, setNeverAllow] = useState(true);
+  useEffect(() => {
+    if ((pwstatus, idstatus, numberstatus)) {
+      setNeverAllow(false);
+
+      return;
+    }
+    setNeverAllow(true);
+  }, [pwstatus, idstatus, numberstatus]);
+
+  const testone = () => {
+    alert("버튼 활성화 확인");
+  };
+
   return (
     <div>
       <section className="modal_email">
@@ -66,8 +106,16 @@ const ModalEmail = (props) => {
               <div className="margin_label">
                 <label>이름</label>
               </div>
-              <input type="text" placeholder="이름을 입력해주세요." />
+              <input
+                value={idvalue}
+                onChange={idstatuschange}
+                type="text"
+                placeholder="이름을 입력해주세요."
+              />
             </div>
+            {!idstatus && idvalue.length > 0 && (
+              <div className="errorMessageWrap">이름을 정확히 입력해주세요</div>
+            )}
             <div className="disable">
               <div className="margin_label">
                 <label>휴대폰 번호</label>
@@ -77,8 +125,23 @@ const ModalEmail = (props) => {
                 <option>Seoul +02</option>
               </select>
               <div className="able">
-                <input type="number" placeholder="(예시)01016895161" />
-                <button>
+                <div>
+                  <input
+                    value={numbervalue}
+                    onChange={numberstatuschange}
+                    placeholder="(예시)010-1234-5678"
+                  />
+                  <div className="errorMessageWrap">
+                    {!numberstatus && numbervalue.length > 0 && (
+                      <div>예시와 같이 작성해주세요</div>
+                    )}
+                  </div>
+                </div>
+                <button
+                  onClick={testone}
+                  disabled={getCode}
+                  id={numberstatus ? "getcodeblue2" : "getcodeblue"}
+                >
                   <span>인증번호 받기</span>
                 </button>
               </div>
@@ -99,14 +162,19 @@ const ModalEmail = (props) => {
                   <div>올바른 비밀번호를 입력해주세요.</div>
                 )}
               </div>
+
+              <div className="margin_label">
+                <label>비밀번호 확인</label>
+              </div>
+
               <input
-                value={repwstatus}
+                value={repwvalue}
                 onChange={repwstatuscheck}
                 type="password"
                 placeholder="비밀번호를 다시 한번 입력해주세요."
               />
               <div className="errorMessageWrap">
-                {repwstatus && pwvalue.length > 0 && (
+                {!repwstatus && repwvalue.length > 0 && (
                   <div>동일한 비밀번호를 입력해주세요.</div>
                 )}
               </div>
@@ -117,7 +185,11 @@ const ModalEmail = (props) => {
               </p>
             </div>
             <Checkbox />
-            <button className="last_bt">
+            <button
+              onClick={testone}
+              disabled={neverAllow}
+              className={neverAllow ? "last_bt" : "last_bt2"}
+            >
               <span>가입하기</span>
             </button>
           </section>
