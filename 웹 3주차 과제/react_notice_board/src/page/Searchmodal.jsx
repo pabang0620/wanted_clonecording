@@ -1,23 +1,39 @@
 import React from "react";
 import "./Searchmodal.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Searchmodal = ({ setSearchModalon }) => {
   const CloseSearch = () => {
     setSearchModalon(false);
   };
-  const [searchTerm, setSearchTerm] = useState("");
 
+  const [searchKeyword, setSearchKeyword] = useState("");
+
+  const navigate = useNavigate();
+
+  const Searchthings = () => {
+    navigate(`/search/${searchKeyword}`);
+  };
   return (
     <div>
       <div className="searchmodalall">
         <div className="searchmodalheader">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input
-            type="text"
+            value={searchKeyword}
             placeholder="#태그, 회사, 포지션 검색"
+            onKeyPress={(e) => {
+              if (e.key === "Enter" && searchKeyword.length < 2) {
+                alert("검색어를 두글자이상 입력해주세요");
+                return;
+              }
+              if (e.key === "Enter") {
+                Searchthings();
+              }
+            }}
             onChange={(e) => {
-              setSearchTerm(e.target.value);
+              setSearchKeyword(e.target.value);
             }}
           />
         </div>

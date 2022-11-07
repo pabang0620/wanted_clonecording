@@ -10,7 +10,7 @@ const Navy_all = () => {
 
   const gotoPage = () => {
     alert("채용 상세페이지로 이동");
-    navigate("/page");
+    navigate("/page/:id");
   };
   return (
     <div>

@@ -2,7 +2,6 @@ import React from "react";
 import ImgNewInfo from "./ImgNewsInfo";
 import dummy from "../data.json";
 import { Link } from "react-router-dom";
-import Page from "../Page";
 
 const InfoImgNewsall = () => {
   return (

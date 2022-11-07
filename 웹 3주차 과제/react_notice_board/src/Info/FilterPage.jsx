@@ -1,8 +1,11 @@
 import React from "react";
-import Buttonall from "./Buttonall.component";
-const FillterPage = () => {
+import Buttonall from "./Buttonall";
+import Navy_all from "../componants/NavyAll";
+
+const FilterPage = () => {
   return (
     <div>
+      <Navy_all />
       <div className="withNav">
         <section>
           <article className="header_article">
@@ -61,4 +64,4 @@ const FillterPage = () => {
   );
 };
 
-export default FillterPage;
+export default FilterPage;
