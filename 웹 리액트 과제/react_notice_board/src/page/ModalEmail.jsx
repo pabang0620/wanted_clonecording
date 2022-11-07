@@ -38,11 +38,12 @@ const ModalEmail = (props) => {
 
   const repwstatuscheck = (e) => {
     setRepwvalue(e.target.value);
-    if (repwvalue === pwvalue) {
-      setRepwstatus(false);
+    if (e.target.value === pwvalue) {
+      setRepwstatus(true);
     } else {
-      setRepwstatus(true); // ture 가 아니라 리턴을 주고 useeffect를 참고하여 해보야될거같음
+      setRepwstatus(false); // ture 가 아니라 리턴을 주고 useeffect를 참고하여 해보야될거같음
     }
+    console.log(repwvalue);
   };
   const pwstatuschange = (e) => {
     setPwvalue(e.target.value);
@@ -64,13 +65,12 @@ const ModalEmail = (props) => {
 
   const [neverAllow, setNeverAllow] = useState(true);
   useEffect(() => {
-    if ((pwstatus, idstatus, numberstatus)) {
+    if (pwstatus && idstatus && numberstatus && repwstatus) {
       setNeverAllow(false);
-
       return;
     }
     setNeverAllow(true);
-  }, [pwstatus, idstatus, numberstatus]);
+  }, [pwstatus, idstatus, numberstatus, repwstatus]);
 
   const testone = () => {
     alert("버튼 활성화 확인");
@@ -169,8 +169,8 @@ const ModalEmail = (props) => {
 
               <input
                 value={repwvalue}
-                onChange={repwstatuscheck}
                 type="password"
+                onChange={repwstatuscheck}
                 placeholder="비밀번호를 다시 한번 입력해주세요."
               />
               <div className="errorMessageWrap">

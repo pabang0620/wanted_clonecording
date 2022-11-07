@@ -37,14 +37,14 @@ const InfoMain = () => {
               <button>
                 <span>개발</span>
                 <span>
-                  <i className="fa-solid fa-circle-down"></i>
+                  <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </button>
               <p> | </p>
               <button>
                 <span>개발 전체</span>
                 <span>
-                  <i className="fa-solid fa-circle-down"></i>
+                  <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </button>
             </div>
@@ -59,7 +59,7 @@ const InfoMain = () => {
                         지역
                       </span>
                       <span>
-                        한국 <i className="fa-solid fa-circle-down"></i>
+                        한국 <i class="fa-solid fa-chevron-down"></i>
                       </span>
                     </button>
                     <button>
@@ -67,33 +67,39 @@ const InfoMain = () => {
                         경력
                       </span>
                       <span>
-                        전체 <i className="fa-solid fa-circle-down"></i>
+                        전체 <i class="fa-solid fa-chevron-down"></i>
                       </span>
                     </button>
                     <button>
                       <span className="header_article_buttonflex_span">
-                        기술스택 <i className="fa-solid fa-circle-down"></i>
+                        기술스택 <i class="fa-solid fa-chevron-down"></i>
                       </span>
                     </button>
                   </div>
                   <div>
                     <button>
                       <span>
-                        응답률순 <i className="fa-solid fa-circle-down"></i>
+                        응답률순 <i class="fa-solid fa-chevron-down"></i>
                       </span>
                     </button>
                   </div>
                 </div>
               </div>
             </section>
-            <Buttonall />
+            <div>
+              <Buttonall />
+            </div>
           </div>
         </section>
       </div>
       <div>
         <div className="TitleCenterall">
           <div className="TitleCentero">
-            <button className="TitleCenter_button">북마크 모아보기</button>
+            <button className="TitleCenter_button">
+              {" "}
+              <i className="fa-solid fa-bookmark"></i> &nbsp;&nbsp;&nbsp;북마크
+              모아보기
+            </button>
           </div>
           <div className="TitleCentero">
             <h3 className="TitleCenter">적극 채용 중인 회사</h3>

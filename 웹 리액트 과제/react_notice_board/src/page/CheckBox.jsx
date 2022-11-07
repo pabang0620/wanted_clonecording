@@ -38,14 +38,16 @@ const Checkbox = () => {
 
   return (
     <div className="email_checkbox">
-      <input
-        type="checkbox"
-        name="select-all"
-        onChange={(e) => handleAllCheck(e.target.checked)}
-        // 데이터 개수와 체크된 아이템의 개수가 다를 경우 선택 해제 (하나라도 해제 시 선택 해제)
-        checked={checkItems.length === data.length ? true : false}
-      />
-      <label for="checkbox">전체동의</label>
+      <div id="all_check">
+        <input
+          type="checkbox"
+          name="select-all"
+          onChange={(e) => handleAllCheck(e.target.checked)}
+          // 데이터 개수와 체크된 아이템의 개수가 다를 경우 선택 해제 (하나라도 해제 시 선택 해제)
+          checked={checkItems.length === data.length ? true : false}
+        />
+        <label for="checkbox">전체동의</label>
+      </div>
       {data?.map((data, id) => (
         <tr key={id}>
           <td>

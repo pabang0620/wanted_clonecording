@@ -1,27 +1,31 @@
 import React from "react";
 import Buttonall from "./Buttonall";
 import Navy_all from "../componants/NavyAll";
+import { useSearchParams } from "react-router-dom";
+import dummy from "../data.json";
+import ImgNewInfo from "./ImgNewsInfo";
 
 const FilterPage = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const searchKeyword = searchParams.get("query");
+
+  const filtered = dummy.company.filter((cp) => cp.job.includes(searchKeyword));
+
   return (
     <div>
       <Navy_all />
+      <div className="searchKeyword">
+        <div>
+          <h1>{searchKeyword}</h1>
+        </div>
+      </div>
+      <div></div>
       <div className="withNav">
         <section>
           <article className="header_article">
             <div>
               <button>
-                <span>개발</span>
-                <span>
-                  <i className="fa-solid fa-circle-down"></i>
-                </span>
-              </button>
-              <p> | </p>
-              <button>
-                <span>개발 전체</span>
-                <span>
-                  <i className="fa-solid fa-circle-down"></i>
-                </span>
+                <span>포지션 16</span>
               </button>
             </div>
           </article>
@@ -59,6 +63,21 @@ const FilterPage = () => {
           </section>
           <Buttonall />
         </section>
+      </div>
+      <div className="ImgNewsInfoFlexFlex">
+        <ul className="ImgNewsInfoFlex">
+          {filtered.map((cp) => {
+            return (
+              <ImgNewInfo
+                key={cp.id}
+                id={cp.id}
+                src={cp.src}
+                job={cp.job}
+                is={cp.is}
+              />
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

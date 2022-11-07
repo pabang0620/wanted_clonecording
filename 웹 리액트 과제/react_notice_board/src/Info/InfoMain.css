@@ -71,14 +71,15 @@ button {
 }
 .header_articleButton {
   display: flex;
-  width: 100vw;
-  overflow: hidden;
+  width: 1060px;
+  overflow-x: hidden;
   height: 50px;
   justify-content: center;
   border-bottom: 0.1px solid #e2e2e2;
   padding-bottom: 25px;
 }
 .header_articleButton button {
+  display: flex;
   height: 32px;
   border-radius: 17px;
   padding: 8px 14px;
@@ -87,9 +88,16 @@ button {
 .header_articleButton button:hover {
   border: 1px solid #36f;
 }
+
 .button_span {
+  white-space: nowrap;
   font-family: "Pretendard-Regular";
   font-size: 13px;
+}
+.header_articleButton img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
 }
 .header_articleButton button:nth-child(1) {
   background-color: #f2fbf5;
@@ -226,10 +234,9 @@ button {
   font-family: "Pretendard-regular";
 }
 .ImgNewsInfoFlex {
-  width: 1110px;
+  width: 1080px;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
   margin-top: 10px;
   padding-left: 0px;
 }
@@ -251,4 +258,9 @@ button {
 }
 .justFixedheader {
   position: none;
+}
+.hiddenslick {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
 }

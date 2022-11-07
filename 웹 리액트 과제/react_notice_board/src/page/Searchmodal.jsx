@@ -13,7 +13,7 @@ const Searchmodal = ({ setSearchModalon }) => {
   const navigate = useNavigate();
 
   const Searchthings = () => {
-    navigate(`/search/${searchKeyword}`);
+    navigate(`/search?query=${searchKeyword}`);
   };
   return (
     <div>

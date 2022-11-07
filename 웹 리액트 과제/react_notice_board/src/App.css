@@ -965,8 +965,8 @@ modal_second */
 }
 
 .email_checkbox input {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   margin: 8px 3px 3px 4px;
 }
 .email_checkbox label {
@@ -974,7 +974,6 @@ modal_second */
 }
 #all_check {
   border-bottom: 0.1px solid #bdbcbc;
-  padding-bottom: 7px;
 }
 
 .last_bt {
@@ -1042,4 +1041,15 @@ modal_second */
 }
 #getcodeblue2 {
   background-color: #3366ff;
+}
+.searchKeyword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(60%);
+  border-bottom: 1px solid #e4f4ec;
+  margin-bottom: 20px;
+}
+.searchKeyword h1 {
+  font-size: 48px;
 }

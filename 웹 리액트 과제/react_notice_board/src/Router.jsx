@@ -10,7 +10,7 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/search/:" element={<FilterPage />} />
+        <Route path="/search" element={<FilterPage />} />
         <Route path="/" element={<Main />} />
         <Route path="/page/:id" element={<Page />} />
         <Route path="/info" element={<Info />} />
