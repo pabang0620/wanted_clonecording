@@ -5,12 +5,15 @@ import Modalon from "../page/Modalon.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import Searchcom from "./Searchcom";
 
-const Navy_all = () => {
+const NavyAll = () => {
   const navigate = useNavigate();
 
   const gotoPage = () => {
     alert("채용 상세페이지로 이동");
     navigate("/page/:id");
+  };
+  const gotoBookmark = () => {
+    navigate("/profile/bookmarks");
   };
   return (
     <div>
@@ -44,7 +47,7 @@ const Navy_all = () => {
                 <Modalon />
                 <li id="nothing">|</li>
                 <li id="service">
-                  <a> 기업 서비스</a>
+                  <button onClick={gotoBookmark}>기업 서비스</button>
                 </li>
               </ul>
             </div>
@@ -55,4 +58,4 @@ const Navy_all = () => {
   );
 };
 
-export default Navy_all;
+export default NavyAll;

@@ -105,16 +105,18 @@ const InfoMain = () => {
             <h3 className="TitleCenter">적극 채용 중인 회사</h3>
           </div>
         </div>
-        <div className="ImgAdsFlex">
-          {dummy.headcompany.map((headcompanyinfo) => (
-            <ImgAds
-              key={headcompanyinfo.id}
-              src={headcompanyinfo.src}
-              logo={headcompanyinfo.logo}
-              job={headcompanyinfo.job}
-              is={headcompanyinfo.is}
-            />
-          ))}
+        <div className="ImgAdsFlexcenter">
+          <div className="ImgAdsFlex">
+            {dummy.headcompany.map((headcompanyinfo) => (
+              <ImgAds
+                key={headcompanyinfo.id}
+                src={headcompanyinfo.src}
+                logo={headcompanyinfo.logo}
+                job={headcompanyinfo.job}
+                is={headcompanyinfo.is}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <InfoImgNewsall />

@@ -5,6 +5,7 @@ import Main from "./Main";
 import Info from "./Info";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FilterPage from "./Info/FilterPage";
+import Bookmarkcom from "./componants/Bookmarkcom";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
         <Route path="/" element={<Main />} />
         <Route path="/page/:id" element={<Page />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/profile/bookmarks" element={<Bookmarkcom />} />
       </Routes>
     </BrowserRouter>
   );

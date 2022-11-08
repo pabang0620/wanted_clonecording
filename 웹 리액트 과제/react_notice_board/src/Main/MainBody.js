@@ -49,7 +49,7 @@ const MainBody = () => {
         </div>
         <div className="buttonCenter4">
           <div className="button_1">
-            <Slider {...settings3}>
+            <Slider className="secondSlick" {...settings3}>
               {dummy.mainbutton.map((buttoninput) => (
                 <ButtonMain key={buttoninput.id} tag={buttoninput.tag} />
               ))}

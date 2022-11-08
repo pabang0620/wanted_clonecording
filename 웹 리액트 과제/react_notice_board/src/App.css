@@ -35,7 +35,7 @@ button:hover {
   position: fixed;
 }
 .navbar {
-  width: 1060px;
+  width: 1184px;
   height: 50px;
   background-color: white;
   display: flex;
@@ -73,6 +73,9 @@ button:hover {
   display: inline-block;
   padding: 15px;
   color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
   font-family: "Pretendard-Regular";
 }
 .nav_menu_a:hover {
@@ -90,8 +93,8 @@ button:hover {
 .nav_service {
   display: flex;
 }
-#service a {
-  padding: 5px 10px;
+.nav_service i {
+  margin-top: 10px;
 }
 .nav_service button {
   padding: 0px 5px;
@@ -104,15 +107,20 @@ button:hover {
   font-size: 14px;
   padding: 0px 3px;
 }
-#service a {
+#service button {
+  padding: 0px 8px;
   color: gray;
+  font-family: "pretendard-regular";
   align-items: center;
   display: center;
   justify-self: center;
-  font-size: 13px;
-  border: 0.5px solid gray;
+  font-size: 14px;
+  border: 0.5px solid #bdbcbc;
   line-height: 30px;
-  border-radius: 15px;
+  border-radius: 18px;
+}
+#service button:hover {
+  cursor: pointer;
 }
 #nothing {
   color: gray;
@@ -462,7 +470,7 @@ h6 {
 /* ==================================================================================== */
 /* footer from 1weeks */
 footer {
-  width: 1060px;
+  width: 1184px;
   margin: auto;
   padding: 18px 0px 65px;
 }
@@ -502,7 +510,7 @@ footer {
   height: 20px;
 }
 .last_div2 {
-  width: 1060px;
+  width: 1184px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -553,10 +561,11 @@ footer {
   font-size: 20px;
   font-family: "Pretendard-Regular";
   margin: 0px 0px 20px;
-  width: 1060px;
+  width: 1184px;
 }
 .img_news_info {
   padding: 10px;
+  width: 275px;
 }
 .img_news_info:hover {
   cursor: pointer;
@@ -569,8 +578,8 @@ footer {
   padding: 14px 0px;
 }
 .img_news_info img {
-  width: 250px;
-  height: 187.5px;
+  width: 275px;
+  height: 200.5px;
   object-fit: cover;
   border-radius: 5px;
 }

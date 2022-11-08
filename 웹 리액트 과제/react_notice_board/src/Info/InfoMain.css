@@ -15,7 +15,7 @@ button {
   padding: 100px 0px 0px;
 }
 .header_article div {
-  width: 1060px;
+  width: 1184px;
   display: flex;
   align-items: center;
   justify-content: baseline;
@@ -44,7 +44,7 @@ button {
 .header_article_buttonflex {
   display: flex;
   justify-content: space-between;
-  width: 1060px;
+  width: 1184px;
   margin-top: 30px;
   margin-bottom: 18px;
   padding-bottom: 18px;
@@ -71,7 +71,7 @@ button {
 }
 .header_articleButton {
   display: flex;
-  width: 1060px;
+  width: 1184px;
   overflow-x: hidden;
   height: 50px;
   justify-content: center;
@@ -147,26 +147,26 @@ button {
   background-color: #eff1fb;
 }
 .ImgAds_boxsize {
-  width: 197px;
+  width: 215px;
   height: 144px;
   overflow: hidden;
 }
 .ImgAds_boxsize2 {
-  width: 197px;
+  width: 215px;
   height: 124px;
 }
 
 .ImgAds_boxsize img {
-  width: 197px;
+  width: 215px;
   height: 144px;
 }
 .ImgAds_boxsize2 div {
-  width: 197px;
+  width: 215px;
   height: 90px;
   margin: 34px 16px 0px;
 }
 .ImgAds_boxsize2 footer {
-  width: 175px;
+  width: 193px;
   height: 90px;
   padding: 15px 10px;
   border: 1px solid #e2e2e2;
@@ -183,6 +183,12 @@ button {
   font-family: "Pretendard-regular";
 }
 .ImgAdsFlex {
+  display: flex;
+  justify-content: center;
+  width: 1184px;
+}
+.ImgAdsFlexcenter {
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -208,7 +214,7 @@ button {
 }
 
 .TitleCenter {
-  width: 1060px;
+  width: 1184px;
   display: flex;
   background-color: white;
   margin: 9px 0px 15px 0px;
@@ -225,7 +231,7 @@ button {
   justify-content: center;
 }
 .TitleCenter_button {
-  width: 1060px;
+  width: 1184px;
   display: flex;
   background-color: white;
   margin: 40px 0px 20px 0px;
@@ -234,15 +240,17 @@ button {
   font-family: "Pretendard-regular";
 }
 .ImgNewsInfoFlex {
-  width: 1080px;
+  width: 1184px;
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
   margin-top: 10px;
   padding-left: 0px;
 }
 .ImgNewsInfoFlexFlex {
   display: flex;
   justify-content: center;
+  width: 100vw;
 }
 .img_news_info i {
   position: absolute;

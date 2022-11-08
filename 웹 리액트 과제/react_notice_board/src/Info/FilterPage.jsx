@@ -1,6 +1,6 @@
 import React from "react";
 import Buttonall from "./Buttonall";
-import Navy_all from "../componants/NavyAll";
+import NavyAll from "../componants/NavyAll";
 import { useSearchParams } from "react-router-dom";
 import dummy from "../data.json";
 import ImgNewInfo from "./ImgNewsInfo";
@@ -13,7 +13,7 @@ const FilterPage = () => {
 
   return (
     <div>
-      <Navy_all />
+      <NavyAll />
       <div className="searchKeyword">
         <div>
           <h1>{searchKeyword}</h1>
