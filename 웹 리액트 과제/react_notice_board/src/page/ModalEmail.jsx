@@ -76,6 +76,9 @@ const ModalEmail = (props) => {
     alert("버튼 활성화 확인");
   };
 
+  // 회원가입 클릭시 로컬스토리지에 저장
+
+  let localStorage = window.localStorage;
   return (
     <div>
       <section className="modal_email">
@@ -186,7 +189,10 @@ const ModalEmail = (props) => {
             </div>
             <Checkbox />
             <button
-              onClick={testone}
+              onClick={() => {
+                localStorage.setItem("id", props.checkEmailvalue);
+                localStorage.setItem("pw", pwvalue);
+              }}
               disabled={neverAllow}
               className={neverAllow ? "last_bt" : "last_bt2"}
             >

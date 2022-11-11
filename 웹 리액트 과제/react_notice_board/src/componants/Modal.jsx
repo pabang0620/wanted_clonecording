@@ -1,5 +1,4 @@
 import React from "react";
-import ModalEmail from "../page/ModalEmail";
 import ModalPage from "../page/ModalPage";
 
 const Modal = () => {

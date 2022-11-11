@@ -2,17 +2,27 @@ import React from "react";
 import "./Modalon";
 import { useState, useEffect } from "react";
 import ModalEmail from "./ModalEmail";
+import ModalPw from "./ModalPw";
 
 const ModalPage = ({ setModalPageopen }) => {
   const CloseModal = () => {
     setModalPageopen(false);
   };
+  const [modalPwinput, setModalPwinput] = useState(false);
+  const [buttonIdstate, setButtonIdstate] = useState(false);
   // 모달 끄기
   const [KeepEmail, setKeepEmail] = useState(false);
-  const Keeping = () => {
-    setKeepEmail(true);
+
+  // 이메일 계속하기 클릭시 모달 옮김
+  const joinbegin = () => {
+    if (checkEmailvalue === localStorage.getItem("id")) {
+      setModalPwinput(true);
+      setButtonIdstate(true);
+    }
+    if (checkEmailvalue !== localStorage.getItem("id")) {
+      setKeepEmail(true);
+    }
   };
-  // 이메일로 계속하기 클릭시 모달 옮김
   const [checkEmailvalue, setCheckEmailvalue] = useState("");
 
   const [emailstatus, setEmailstatus] = useState(false);
@@ -48,7 +58,6 @@ const ModalPage = ({ setModalPageopen }) => {
   //     console.log();
   //   })
   // },[])
-
   return (
     <section className="modal_centeron">
       <section className="modal_flex">
@@ -91,7 +100,11 @@ const ModalPage = ({ setModalPageopen }) => {
             </div>
           </div>
           <div className="modal_bt_style">
-            <button onClick={Keeping} id="keep_join" disabled={notAllow}>
+            <button
+              onClick={joinbegin}
+              id={buttonIdstate ? "keep_joinHidden" : "keep_join"}
+              disabled={notAllow}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -116,7 +129,12 @@ const ModalPage = ({ setModalPageopen }) => {
                 checkEmailvalue={checkEmailvalue}
               />
             )}
-
+            {modalPwinput && (
+              <ModalPw
+                setModalPageopen={setModalPageopen}
+                checkEmailvalue={checkEmailvalue}
+              />
+            )}
             <div id="modal_or">or</div>
             <div id="modal_next">다음 계정으로 계속하기</div>
             <div className="modal_bt_flex">
@@ -210,6 +228,7 @@ const ModalPage = ({ setModalPageopen }) => {
           </div>
         </div>
       </section>
+
       <div>
         <div onClick={CloseModal} className="black"></div>
       </div>

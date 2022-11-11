@@ -4,8 +4,13 @@ import Nav from "../page/nav";
 import Modalon from "../page/Modalon.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import Searchcom from "./Searchcom";
+import { useSelector } from "react-redux";
 
 const NavyAll = () => {
+  const test2 = useSelector((state) => state.naviLoginstatus);
+  const test = () => {
+    console.log(test2);
+  };
   const navigate = useNavigate();
 
   const gotoPage = () => {
@@ -45,7 +50,9 @@ const NavyAll = () => {
               <Searchcom />
               <ul>
                 <Modalon />
-                <li id="nothing">|</li>
+                <li onClick={test} id="nothing">
+                  |
+                </li>
                 <li id="service">
                   <button onClick={gotoBookmark}>기업 서비스</button>
                 </li>

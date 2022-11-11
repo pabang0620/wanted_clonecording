@@ -624,7 +624,6 @@ footer {
   height: 700px;
   margin: auto;
   display: flex;
-  background-color: white;
   z-index: 300;
 }
 .modal_top_img {
@@ -646,6 +645,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 16px 20px;
+  background-color: white;
 }
 
 .modal_header {
@@ -678,7 +678,6 @@ footer {
   flex-direction: column;
   width: 360px;
   height: 101px;
-  padding: 0px 0px 14px;
 }
 .modal_email2 label {
   font-size: 14px;
@@ -711,6 +710,9 @@ footer {
   width: 360px;
   height: 50px;
   background-color: #3366ff;
+}
+#keep_joinHidden {
+  display: none;
 }
 .modal_bt_style {
   font-size: 14px;
@@ -798,7 +800,7 @@ footer {
 
 .modal_flex {
   border: 1px solid #e4f4ec;
-  width: 400px;
+  width: auto;
   margin: auto;
   background-color: white;
   position: absolute;
@@ -1061,4 +1063,22 @@ modal_second */
 }
 .searchKeyword h1 {
   font-size: 48px;
+}
+
+/* 패스워드 모달창 페이지 */
+.pwpagestyle {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.pwinput {
+  width: 330px;
+  height: 54px;
+  padding: 1px 15px;
+  background-color: white;
+  margin-bottom: 35px;
+  border-radius: 3px;
+  border: 1px solid #e4f4ec;
+  font-family: "pretendard-regular";
 }
