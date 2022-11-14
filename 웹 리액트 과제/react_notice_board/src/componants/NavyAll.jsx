@@ -2,17 +2,15 @@ import "../App.css";
 import React from "react";
 import Nav from "../page/nav";
 import Modalon from "../page/Modalon.jsx";
+import Modalon2 from "../page/Modalon2.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import Searchcom from "./Searchcom";
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const NavyAll = () => {
-  const test2 = useSelector((state) => state.naviLoginstatus);
-  const test = () => {
-    console.log(test2);
-  };
   const navigate = useNavigate();
-
+  const LoginStatus = useSelector((state) => state.reducer.naviLoginstatus);
   const gotoPage = () => {
     alert("채용 상세페이지로 이동");
     navigate("/page/:id");
@@ -49,10 +47,9 @@ const NavyAll = () => {
             <div className="nav_service">
               <Searchcom />
               <ul>
-                <Modalon />
-                <li onClick={test} id="nothing">
-                  |
-                </li>
+                {LoginStatus === true ? <Modalon2 /> : <Modalon />}
+
+                <li id="nothing">|</li>
                 <li id="service">
                   <button onClick={gotoBookmark}>기업 서비스</button>
                 </li>

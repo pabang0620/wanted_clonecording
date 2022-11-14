@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Login, Logout } from "../module/ModalStore";
+import { Login, Logout, initialStates } from "../module/ModalStore";
 
 const ModalPw = (setModalPageopen) => {
   const [pwstatus, setPwstatus] = useState("");
@@ -12,14 +12,16 @@ const ModalPw = (setModalPageopen) => {
 
   const inputPw = () => {
     if (pwstatus === localStorage.getItem("pw")) {
-      disPatch({ type: "Login" });
-      console.log(test2);
+      disPatch(Login());
+      // disPatch();
+      // console.log(test2);
+      // 프롭스로 close모달 ,
     }
     if (pwstatus !== localStorage.getItem("pw")) {
       alert("비밀번호를 다시 확인해주세요.");
     }
   };
-  const test2 = useSelector((state) => state.naviLoginstatus);
+  const test2 = useSelector((state) => state.reducer.naviLoginstatus);
 
   const onChangePw = (e) => {
     setPwstatus(e.target.value);
@@ -47,7 +49,7 @@ const ModalPw = (setModalPageopen) => {
                 다음
               </button>
 
-              <div>비밀번호 초기화/변경</div>
+              <div onClick={() => console.log(test2)}>비밀번호 초기화/변경</div>
             </div>
           </section>
         </div>

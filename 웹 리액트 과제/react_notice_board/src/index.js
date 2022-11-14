@@ -6,9 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import reducer from "./module/ModalStore";
+import { composeWithDevTools } from "redux-devtools-extension"; // 리덕스 개발자 도구
+import { rootReducer } from "./module";
+
+const store = createStore(rootReducer, composeWithDevTools()); // 스토어를 만듭니다.
+// composeWithDevTools 를 사용하여 리덕스 개발자 도구 활성화
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const store = createStore(reducer);
 root.render(
   <Provider store={store}>
     <React.StrictMode>

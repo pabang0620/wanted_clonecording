@@ -72,10 +72,6 @@ const ModalEmail = (props) => {
     setNeverAllow(true);
   }, [pwstatus, idstatus, numberstatus, repwstatus]);
 
-  const testone = () => {
-    alert("버튼 활성화 확인");
-  };
-
   // 회원가입 클릭시 로컬스토리지에 저장
 
   let localStorage = window.localStorage;
@@ -141,7 +137,6 @@ const ModalEmail = (props) => {
                   </div>
                 </div>
                 <button
-                  onClick={testone}
                   disabled={getCode}
                   id={numberstatus ? "getcodeblue2" : "getcodeblue"}
                 >
@@ -192,6 +187,7 @@ const ModalEmail = (props) => {
               onClick={() => {
                 localStorage.setItem("id", props.checkEmailvalue);
                 localStorage.setItem("pw", pwvalue);
+                CloseModal();
               }}
               disabled={neverAllow}
               className={neverAllow ? "last_bt" : "last_bt2"}

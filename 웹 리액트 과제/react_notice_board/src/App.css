@@ -85,6 +85,7 @@ button:hover {
 .nav_service ul {
   align-items: center;
   padding: 0px 10px;
+  margin: 16px 0px 10px 0px;
 }
 .nav_service li {
   display: inline-block;
@@ -103,9 +104,12 @@ button:hover {
   cursor: pointer;
 }
 
-#join {
-  font-size: 14px;
-  padding: 0px 3px;
+.join i {
+  width: 20px;
+  height: 20px;
+
+  padding: 5px;
+  margin: 1px 10px 0px 0px;
 }
 #service button {
   padding: 0px 8px;
@@ -127,7 +131,6 @@ button:hover {
   font-size: 3px;
   margin: 0px 15px 0px 15px;
 }
-
 /* ================================================================= */
 /* 센터 */
 
@@ -944,7 +947,7 @@ modal_second */
   font-size: 16px;
 }
 .margin_label {
-  margin: 17px 0px 7px;
+  margin: 0px 0px 7px;
 }
 .margin_label label {
   font-size: 14px;

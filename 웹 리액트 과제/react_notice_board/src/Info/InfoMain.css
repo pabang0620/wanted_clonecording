@@ -243,7 +243,6 @@ button {
   width: 1184px;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
   margin-top: 10px;
   padding-left: 0px;
 }
