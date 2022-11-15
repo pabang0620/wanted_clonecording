@@ -1,0 +1,51 @@
+.LogoutModal {
+  padding: 14px 0px 0px;
+  width: 192px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+#margintopmodal {
+  margin-top: 15px;
+}
+.LogoutModal li {
+  width: 192px;
+  height: 30px;
+  font-size: 14px;
+  font-family: "pretendard-regular";
+  padding: 5px;
+  margin: 3px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.LogoutModal li:hover {
+  background-color: #ececec;
+  border-radius: 6px;
+}
+.mnThing {
+  position: fixed;
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  height: 14px;
+  width: 14px;
+  border-top-right-radius: 30%;
+  -webkit-transform: rotate(-55deg) skewX(-20deg);
+  transform: translateX(200%) translateY(55%) rotate(-55deg) skewX(-20deg);
+}
+.graycolor {
+  background-color: #ececec;
+  height: 50px;
+}
+#LogoutModalLine {
+  display: block;
+  margin: 9px 7px;
+  height: 0.5px;
+  background-color: #ececec;
+  padding: 0.5px;
+}
