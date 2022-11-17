@@ -245,6 +245,7 @@ button {
   display: flex;
   margin-top: 10px;
   padding-left: 0px;
+  z-index: 10;
 }
 .ImgNewsInfoFlexFlex {
   display: flex;
@@ -256,6 +257,7 @@ button {
   transform: translateX(-200%) translatey(100%);
   color: rgb(81, 129, 216);
   background-color: transparent;
+  z-index: 30;
 }
 .fixedheader {
   position: fixed;
@@ -270,4 +272,6 @@ button {
   display: flex;
   width: 100vw;
   justify-content: center;
+}
+.fa-regular fa-bookmark {
 }

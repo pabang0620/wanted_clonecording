@@ -17,7 +17,7 @@ const InfoImgNewsall = () => {
                 job={companyinfo.job}
                 is={companyinfo.is}
                 ImgNewInfo={ImgNewInfo}
-              />{" "}
+              />
             </Link>
           ))}
         </ul>

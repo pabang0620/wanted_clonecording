@@ -29,7 +29,7 @@ const Modalon = () => {
         <i
           onClick={ShowlogoutModal}
           id="profile"
-          class="fa-regular fa-user"
+          class="fa-solid fa-circle-user"
         ></i>
         {LoginModalStatus === true ? <LogoutModal /> : null}
       </a>

@@ -6,4 +6,5 @@ import LOGINModalstatusOnOff from "./LogoutModal";
 export const rootReducer = combineReducers({
   reducer,
   LOGINModalstatusOnOff,
+  bookmarkReducer,
 });
