@@ -1,9 +1,17 @@
 import React from "react";
 import NavyAll from "./NavyAll";
 import { useDispatch, useSelector } from "react-redux";
+import dummy from "../data.json";
 
 const Bookmarkcom = () => {
   const bookmarkList = useSelector((state) => state.bookmark.bookmarkstate);
+  const bookmarkdata = () => {
+    dummy.company.filter(
+      (
+        data //return  빼도됨?
+      ) => bookmarkList.includes(data.id)
+    );
+  };
   return (
     <div>
       <div>
