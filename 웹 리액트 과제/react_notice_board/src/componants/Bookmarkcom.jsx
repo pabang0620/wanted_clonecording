@@ -8,7 +8,7 @@ const Bookmarkcom = () => {
   const bookmarkdata = () => {
     dummy.company.filter(
       (
-        data //return  빼도됨?
+        data //return  빼도됨?   d코드 더
       ) => bookmarkList.includes(data.id)
     );
   };
