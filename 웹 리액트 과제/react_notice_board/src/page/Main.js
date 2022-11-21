@@ -33,7 +33,7 @@ const Main = () => {
               </div>
               <div className="move_box_btst">
                 <button id="bt1">
-                  <img src="image/bookmark.png" />
+                  <img src={process.env.PUBLIC_URL + "/image/bookmark.png"} />
                   <span>북마크하기</span>
                 </button>
                 <button id="bt2">
@@ -44,18 +44,21 @@ const Main = () => {
                 <button>
                   <i className="fa-regular fa-heart"></i> <span> 9</span>
                 </button>
-                <img alt="" src="image/likes_info.png" />
+                <img
+                  alt=""
+                  src={process.env.PUBLIC_URL + "/image/likes_info.png"}
+                />
               </div>
             </div>
           </section>
         </section>
       </section>
-
+      <h5 className="find_this_position">이 포지션을 찾고 계셨나요?</h5>
       <section className="center_for_imgnews">
-        <div className="find_this_position">
-          <h5>이 포지션을 찾고 계셨나요?</h5>
-          <InfoImgNewsall />
-        </div>
+        {/* <div className="find_this_position"> */}
+
+        <InfoImgNewsall />
+        {/* </div> */}
       </section>
     </div>
   );

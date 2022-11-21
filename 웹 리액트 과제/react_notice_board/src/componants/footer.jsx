@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="last_div1">
         <ul className="last_list">
           <li>
-            <img src="image/wanted.png" />
+            <img src={process.env.PUBLIC_URL + "/image/wanted.png"} />
           </li>
           <li>
             <a href="#">기업소개</a>
@@ -39,12 +39,18 @@ const Footer = () => {
           </li>
           <li>
             <a href="#">
-              <img id="minipic" src="image/naver_blog.png" />
+              <img
+                id="minipic"
+                src={process.env.PUBLIC_URL + "/image/naver_blog.png"}
+              />
             </a>
           </li>
           <li>
             <a href="#">
-              <img id="minipic" src="image/chat.png" />
+              <img
+                id="minipic"
+                src={process.env.PUBLIC_URL + "/image/chat.png"}
+              />
             </a>
           </li>
           <li>
@@ -76,7 +82,7 @@ const Footer = () => {
           사업자등록번호 : 299-86-00021 | 02-539-7118&#169;Wantedlab, inc.
         </p>
         <div>
-          <img src="image/korea.png" alt="한국" />
+          <img src={process.env.PUBLIC_URL + "/image/korea.png"} />
           <select className="lang_select">
             <option value="0">한국(한국어)</option>
             <option value="1">일본어</option>

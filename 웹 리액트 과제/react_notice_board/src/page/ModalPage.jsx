@@ -63,7 +63,7 @@ const ModalPage = ({ setModalPageopen }) => {
       <section className="modal_flex">
         <div className="modal_top_img">
           <div></div>
-          <img src="image/wantedd.png" />
+          <img src={process.env.PUBLIC_URL + "image/wantedd.png"} />
           <div className="close_icon" onClick={CloseModal}>
             <i className="fa-solid fa-xmark"></i>
           </div>

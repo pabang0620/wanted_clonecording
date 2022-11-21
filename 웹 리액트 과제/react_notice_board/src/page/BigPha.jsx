@@ -83,7 +83,7 @@ const BigPha = () => {
       <div className="blue">
         <div className="blue_right">
           <div>
-            <img src="image/blue.png" />
+            <img src={process.env.PUBLIC_URL + "/image/blue.png"} />
           </div>
           <div>
             <div className="blue_bic">

@@ -13,7 +13,7 @@ const NavyAll = () => {
   const LoginStatus = useSelector((state) => state.reducer.naviLoginstatus);
   const gotoPage = () => {
     alert("채용 상세페이지로 이동");
-    navigate("/page/:id");
+    navigate("/page/0");
   };
   const gotoBookmark = () => {
     navigate("/profile/bookmarks");
@@ -26,7 +26,7 @@ const NavyAll = () => {
             <div className="main">
               <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=undefined&q=75" />
               <Link to="/">
-                <img src="image/wantedd.png" />
+                <img src={process.env.PUBLIC_URL + "/image/wantedd.png"} />
               </Link>
             </div>
 

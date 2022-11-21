@@ -5,28 +5,25 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import dummy from "../data.json";
 
-function ImgNewInfo({ src, job, is }) {
+function ImgNewInfo({ src, job, is, id }) {
   const [bookmarkIcon, setBookmarkIcon] = useState(false);
-  const Bookmarking = (e) => {
-    e.preventDefault(); // 상위 이벤트 전파방지
-    setBookmarkIcon(true);
-    if (bookmarkIcon === true) {
-      //// if 문 작성법이 잘못됐나? 왜 안되는지 모르겠다
-      setBookmarkIcon(false); //// 그냥 리덕스로 하자
-    }
-    console.log(setBookmarkIcon);
-  };
 
-  // const bookmarkstatus = useSelector(                           /// 전체선택이 되버림
-  //   (state) => state.bookmarkReducer.bookmarkstate
-  // );
-  // const dispatch = useDispatch();
-  // const Bookmarking = () => {
-  //   dispatch({ type: "Bookmarking" });
-  //   if (bookmarkstatus) {
-  //     dispatch({ type: "offBookmarking" });
-  //   }
-  // };
+  const bookmarkstatus = useSelector(
+    (state) => state.bookmarkReducer.bookmarkstate
+  );
+  const dispatch = useDispatch();
+  const Bookmarking = (e) => {
+    e.preventDefault();
+
+    if (bookmarkIcon === false) {
+      dispatch({ type: "Bookmarking", id });
+      setBookmarkIcon(true);
+    }
+    if (bookmarkIcon) {
+      setBookmarkIcon(false);
+      dispatch({ type: "Bookmarking", id });
+    }
+  };
   const number = 1000000;
   const number2 = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   return (
@@ -36,7 +33,7 @@ function ImgNewInfo({ src, job, is }) {
       <i
         onClick={Bookmarking}
         className={
-          bookmarkIcon === true
+          bookmarkstatus.includes(id) === true
             ? "fa-solid fa-bookmark"
             : "fa-regular fa-bookmark"
         }

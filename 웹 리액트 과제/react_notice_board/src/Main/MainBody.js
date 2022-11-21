@@ -150,7 +150,7 @@ const MainBody = () => {
       <section className="last_color">
         <div className="last">
           <div className="img_p">
-            <img src="../image/wanted+.png" />
+            <img src={process.env.PUBLIC_URL + "../image/wanted+.png"} />
             <p>구독해야 하는 이유</p>
           </div>
           <div className="x14x">
