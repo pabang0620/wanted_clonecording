@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pagestyle.css">
+</head>
+<body>
+    <section class = "modal_email">
+        <div class="modal_nav_header">
+        <section class="modal_email_header">
+            <div>
+            <button><</button>
+            </div>
+            <div class="modal_email_header_center">
+                <p>회원가입</p>
+            </div>
+        </section>
+        </div>
+        <div class="modal_email_display">
+        <section class = "modal_email_body">
+            <div class = "disable">
+                <div class = "margin_label"><label>이메일</label></div>
+                <input type="email" placeholder="none">
+            </div>
+            <div>
+                <div class = "margin_label"><label>이름</label></div>
+                <input type="text" placeholder="이름을 입력해주세요.">
+
+            </div>
+            <div class = "disable">
+                <div class = "margin_label"><label>휴대폰 번호</label></div>
+                <select class="phone_number">
+                    <option>South Korea +82</option>
+                    <option>Seoul +02</option>
+                </select>
+                <div class="able">
+                    <input type="number">
+                    <button><span>인증번호 받기</span></button>
+                </div>
+                <input type="text" placeholder="인증번호를 입력해주세요.">
+            </div>
+            <div>
+                <div class = "margin_label"><label>비밀번호</label></div>
+                <input type="password" placeholder="비밀번호를 입력해주세요">
+                <input type="password" placeholder="비밀번호를 다시 한번 입력해주세요.">
+                <p id = "mini_p">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상<br>16자 이하로 입력해주세요.</p>
+            </div>
+            <div class ="email_checkbox">
+                <div><input type="checkbox"><label>전체동의</label></div>
+                <div><input type="checkbox"><label>만 14세 이상입니다. (필수)</label></div>
+                <div><input type="checkbox"><label>oneID 이용약관 동의 (필수)</label></div>
+                <div><input type="checkbox"><label>개인정보 및 수집 이용 동의 (필수)</label></div>
+            </div>
+            <button class="last_bt"><span>가입하기</span></button>
+        </section>            
+        </div>
+    </section>
+</body>
+</html>
