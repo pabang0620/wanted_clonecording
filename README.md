@@ -9,6 +9,6 @@
   
   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pabang0620)](https://github.com/pabang0620/github-readme-stats)
   
-####   <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
 
 ### Oct 3rd ~ Nov 20th
