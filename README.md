@@ -5,4 +5,4 @@
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=lwh497)](https://solved.ac/lwh497)<br/>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lwh497&langs_count=8)](https://github.com/lwh497/github-readme-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=lwh497&show_icons=true&theme=radical)
