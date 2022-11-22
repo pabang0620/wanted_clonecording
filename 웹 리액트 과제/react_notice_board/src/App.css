@@ -711,6 +711,9 @@ footer {
 #keep_joinHidden {
   display: none;
 }
+.displaynone {
+  display: none;
+}
 .modal_bt_style {
   font-size: 14px;
   color: #767676;

@@ -3,6 +3,14 @@ import "./Modalon";
 import { useState, useEffect } from "react";
 import ModalEmail from "./ModalEmail";
 import ModalPw from "./ModalPw";
+import styled from "styled-components";
+
+// const Displaynone = (props) => {
+//   props.modalPwinput &&
+//     styled.div`
+//       display: none;
+//     `;
+// };
 
 const ModalPage = ({ setModalPageopen }) => {
   const CloseModal = () => {
@@ -21,6 +29,9 @@ const ModalPage = ({ setModalPageopen }) => {
     }
     if (checkEmailvalue !== localStorage.getItem("id")) {
       setKeepEmail(true);
+    }
+    if (modalPwinput) {
+      //스타일드 컴포넌트 안에 삼항 연산자
     }
   };
   const [checkEmailvalue, setCheckEmailvalue] = useState("");
@@ -51,7 +62,6 @@ const ModalPage = ({ setModalPageopen }) => {
     }
     setNotAllow(true);
   }, [emailstatus]);
-
   // useEffect(()=>{
   //하고싶은것  return 내부값은 페이지가 사라질때
   //   return(()=>{
@@ -63,7 +73,7 @@ const ModalPage = ({ setModalPageopen }) => {
       <section className="modal_flex">
         <div className="modal_top_img">
           <div></div>
-          <img src={process.env.PUBLIC_URL + "image/wantedd.png"} />
+          <img src={process.env.PUBLIC_URL + "/image/wantedd.png"} />
           <div className="close_icon" onClick={CloseModal}>
             <i className="fa-solid fa-xmark"></i>
           </div>
@@ -83,7 +93,9 @@ const ModalPage = ({ setModalPageopen }) => {
             </h2>
           </div>
           <div className="modal_email_3">
-            <div className="modal_email2">
+            <div
+              className={modalPwinput === true ? "displaynone" : "modal_email2"}
+            >
               <label for="email">이메일</label>
               <input
                 value={checkEmailvalue}
