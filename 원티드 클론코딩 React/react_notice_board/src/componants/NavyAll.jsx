@@ -8,7 +8,7 @@ import Searchcom from "./Searchcom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
-const NavyAll = () => {
+const Navybar = () => {
   const navigate = useNavigate();
   const LoginStatus = useSelector((state) => state.reducer.naviLoginstatus);
   const gotoPage = () => {
@@ -32,9 +32,15 @@ const NavyAll = () => {
 
             <div className="nav_menu">
               <div onClick={gotoPage}>
-                <Nav tag="채용" />
+                <li>
+                  <a className="displayblock">채용</a>
+                </li>
               </div>
-              <Nav tag="이벤트" />
+
+              <li>
+                <a className="displayblock">이벤트</a>
+              </li>
+
               <Link to="/info">
                 <Nav tag="직군별 연봉" />
               </Link>
@@ -62,4 +68,4 @@ const NavyAll = () => {
   );
 };
 
-export default NavyAll;
+export default Navybar;

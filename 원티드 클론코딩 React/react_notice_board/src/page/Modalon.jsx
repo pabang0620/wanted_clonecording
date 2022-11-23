@@ -12,9 +12,10 @@ const Modalon = () => {
 
   return (
     <li className="join">
-      <a onClick={ShowModal} href="#">
-        회원가입/로그인
-      </a>
+      <a onClick={ShowModal}>회원가입/로그인</a>
+      <p className="mediaJoin" onClick={ShowModal}>
+        회원가입하기
+      </p>
       {ModalPageopen && <ModalPage setModalPageopen={setModalPageopen} />}
       {/* {ModalPageopen === true ? (
         <ModalPage setModalPageopen={setModalPageopen} />
