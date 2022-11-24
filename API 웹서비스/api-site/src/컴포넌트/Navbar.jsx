@@ -7,11 +7,8 @@ const Navbar = () => {
         <div className="col-lg-1"></div>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            {/* <img   이미지가 왜 안들어가지?
-              src={
-                process.env.PUBLIC_URL +
-                "../../../api-site/public/Imgfile/api-site.png"
-              }
+            {/* <img
+              src={process.env.PUBLIC_URL + "../../public/Imgfile/api-site.png"}
             /> */}
             API-PAGE
           </a>
@@ -27,23 +24,12 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  뉴스 카테고리
-                </a>
-              </li>
-            </ul>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                장바구니
-              </a>
-            </li>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="주식 검색"
                 aria-label="Search"
               />
               <button className="btn btn-outline-success" type="submit">

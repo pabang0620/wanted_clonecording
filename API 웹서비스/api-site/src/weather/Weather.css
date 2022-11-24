@@ -1,0 +1,35 @@
+.colum {
+  border: 3px solid white;
+  padding: 5px;
+  margin: 0px 10px;
+}
+.WeatherPlace {
+  display: flex;
+  justify-content: center;
+  border: 3px solid;
+  color: white;
+}
+/* 폰트어썸아이콘 색상 */
+.fa-solid.fa-cloud {
+  color: #4e90f3;
+}
+.fa-solid.fa-snowflake {
+  color: #99bdf5;
+}
+.fa-solid.fa-cloud-showers-heavy {
+  color: bisque;
+}
+.fa-solid.fa-sun {
+  color: yellow;
+}
+/* 폰트어썸아이콘 색상 끝  */
+.accordion-button.collapsed {
+  justify-content: center;
+  display: flex;
+}
+
+.accordion-button {
+  background-image: linear-gradient(90deg, #292d30 -12%, white 200%);
+  background-color: #00d2dd 110% !important;
+  --bs-accordion-active-color: black !important;
+}
