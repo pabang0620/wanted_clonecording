@@ -1,32 +1,45 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import NewsCard from "./NewsCard";
 
 const News = () => {
+  const [technologyNewsdata, settechnologyNewsdata] = useState({});
+  const API_KEY = "2ae7ce13f8f0450285b2066cfa40f2ad";
+
+  const url = `https://newsapi.org/v2/top-headlines?country=kr&category=technology&apiKey=${API_KEY}`;
+
+  const technologyNews = async () => {
+    try {
+      const newsdata = await axios({
+        method: "get",
+        url: url,
+      });
+      settechnologyNewsdata(newsdata);
+      console.log(newsdata);
+    } catch (err) {
+      alert(err);
+    }
+  };
+  useEffect(() => {
+    technologyNews();
+  }, []);
   return (
     <>
       <div className="col-lg-4">
-        <div className="accordion" id="accordionExample">
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingTwo">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                뉴스 슬릭 넣기
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body">뉴스 상세 API</div>
-            </div>
+        <div className="NewsBoxRow">
+          <div className="NewsBox">
+            {Object.keys(technologyNewsdata).length !== 0 && (
+              <div className="NewsCardMain">
+                {technologyNewsdata.data.articles.map((newsAll) => (
+                  <NewsCard
+                    src={newsAll.urlToImage}
+                    title={newsAll.title}
+                    author={newsAll.author}
+                    NewsCard={NewsCard}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

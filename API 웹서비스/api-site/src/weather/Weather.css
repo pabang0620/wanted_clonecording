@@ -2,16 +2,18 @@
   border: 3px solid white;
   padding: 5px;
   margin: 0px 10px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
 }
 .WeatherPlace {
   display: flex;
   justify-content: center;
   border: 3px solid;
   color: white;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 /* 폰트어썸아이콘 색상 */
 .fa-solid.fa-cloud {
-  color: #4e90f3;
+  color: white;
 }
 .fa-solid.fa-snowflake {
   color: #99bdf5;
@@ -27,9 +29,11 @@
   justify-content: center;
   display: flex;
 }
-
+/* 아코디언 클릭시 배경색상 */
 .accordion-button {
   background-image: linear-gradient(90deg, #292d30 -12%, white 200%);
-  background-color: #00d2dd 110% !important;
   --bs-accordion-active-color: black !important;
+}
+.accordion-button::after {
+  z-index: 20;
 }

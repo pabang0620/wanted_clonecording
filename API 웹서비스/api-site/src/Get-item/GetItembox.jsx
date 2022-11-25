@@ -4,7 +4,7 @@ const GetItembox = () => {
   return (
     <div>
       <div className="GetItembox">
-        <div className="GetItemboxHeader">장바구니</div>
+        <div className="GetItemboxHeader">실시간 인기 검색어 순위</div>
       </div>
     </div>
   );

@@ -1,24 +1,20 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun } from "@fortawesome/free-regular-svg-icons";
 import "./Weather.css";
 
 const Weather = () => {
   const [weatherdata, setweatherdata] = useState({});
-  const [weatherdaysdata, setweatherdaysdata] = useState({});
   const API_KEY = "0ec244e46591fd7c367a89652a2c737e";
 
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=37.5665&lon=126.9780&appid=${API_KEY}`;
 
   const seoulWeather = async () => {
     try {
-      const data = await axios({
+      const weathersdata = await axios({
         method: "get",
         url: url,
       });
-      setweatherdata(data);
-      console.log(data);
+      setweatherdata(weathersdata);
     } catch (err) {
       alert(err);
     }
@@ -86,6 +82,14 @@ const Weather = () => {
                         )}
                         {weatherdata.data.weather.map(
                           (sun) =>
+                            sun.main === "Haze" && (
+                              <div>
+                                <i class="fa-solid fa-cloud"></i>
+                              </div>
+                            )
+                        )}
+                        {weatherdata.data.weather.map(
+                          (sun) =>
                             sun.main === "Snow" && (
                               <div>
                                 <i class="fa-solid fa-snowflake"></i>
@@ -121,6 +125,9 @@ const Weather = () => {
                         )}
                         {weatherdata.data.weather.map(
                           (sun) => sun.main === "Clouds" && <div>구름</div>
+                        )}
+                        {weatherdata.data.weather.map(
+                          (sun) => sun.main === "Haze" && <div>안개</div>
                         )}
                       </div>
                     </div>

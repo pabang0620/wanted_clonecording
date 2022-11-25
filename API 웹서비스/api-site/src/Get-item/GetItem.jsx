@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const GetItem = () => {
   return (
     <div>
-      <div className="shoppingBox">네이버 쇼핑 API </div>
+      <div className="shoppingBox">주식 차트 API </div>
     </div>
   );
 };
