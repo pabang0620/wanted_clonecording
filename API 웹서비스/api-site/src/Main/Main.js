@@ -3,9 +3,9 @@ import Weather from "../weather/Weather";
 import News from "../news/News";
 import "./Main.css";
 import Navbar from "../컴포넌트/Navbar";
-import GetItem from "../Get-item/GetItem";
-import GetItembox from "../Get-item/GetItembox";
-import RecommandItem from "../Get-item/RecommandItem";
+import Chart from "../Ranking/Chart";
+import Ranking from "../Ranking/Ranking";
+import RecommandItem from "../Ranking/RecommandItem";
 import Footer from "../컴포넌트/Footer";
 
 const Main = () => {
@@ -18,8 +18,8 @@ const Main = () => {
         <News />
       </div>
       <div className="mainbox_style">
-        <GetItem />
-        <GetItembox />
+        <Chart />
+        {/* <Ranking /> */}
       </div>
       <div className="justCenter">
         <RecommandItem />

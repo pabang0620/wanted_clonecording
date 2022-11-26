@@ -1,22 +1,23 @@
 .NewsBox {
   height: 100px;
   width: 33vw;
-  background-image: linear-gradient(90deg, #5f584c -12%, white 200%);
-  background-color: hwb(229 40% 7%) 110%;
   border-radius: 7px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
   /* display: flex; */
   /* flex-direction: row; */
 }
 .NewsCardMain {
   height: 100px;
-  width: 100vw;
   display: flex;
   flex-direction: row;
 }
 
-.NewsCardSize {
+.NewsCardImgSize {
   height: 100px;
   width: 15vw;
+  object-fit: cover;
 }
 .NewsBoxRow {
   display: flex;
@@ -25,6 +26,42 @@
 .titleWrap {
   font-size: 15px;
   width: 18vw;
-  height: 100px;
+  height: 50px;
   flex-wrap: wrap;
+}
+.author {
+  font-size: 8px;
+  width: 18vw;
+  height: 20px;
+  flex-wrap: wrap;
+}
+.slick-list {
+  height: 100px;
+  width: 34vw;
+  background-image: linear-gradient(90deg, #5f584c -12%, white 200%);
+  border-radius: 7px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 992px) {
+  .slick-list {
+    width: 100vw;
+  }
+  .NewsBox {
+    width: 95vw;
+  }
+  .NewsBoxRow a {
+    width: 50vw;
+  }
+  .row {
+    width: 50vw;
+  }
+  .NewsCardImgSize {
+    width: 50vw;
+  }
+  .titleWrap {
+    width: 40vw;
+  }
 }

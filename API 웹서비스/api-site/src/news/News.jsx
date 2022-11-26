@@ -1,8 +1,19 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import NewsCard from "./NewsCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const News = () => {
+  const settings = {
+    draggable: true,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
   const [technologyNewsdata, settechnologyNewsdata] = useState({});
   const API_KEY = "2ae7ce13f8f0450285b2066cfa40f2ad";
 
@@ -15,7 +26,6 @@ const News = () => {
         url: url,
       });
       settechnologyNewsdata(newsdata);
-      console.log(newsdata);
     } catch (err) {
       alert(err);
     }
@@ -26,21 +36,23 @@ const News = () => {
   return (
     <>
       <div className="col-lg-4">
-        <div className="NewsBoxRow">
-          <div className="NewsBox">
-            {Object.keys(technologyNewsdata).length !== 0 && (
-              <div className="NewsCardMain">
+        <div className="NewsBox">
+          {Object.keys(technologyNewsdata).length !== 0 && (
+            <div className="NewsCardMain">
+              <Slider {...settings}>
                 {technologyNewsdata.data.articles.map((newsAll) => (
                   <NewsCard
+                    key={newsAll.title}
                     src={newsAll.urlToImage}
                     title={newsAll.title}
                     author={newsAll.author}
+                    url={newsAll.url}
                     NewsCard={NewsCard}
                   />
                 ))}
-              </div>
-            )}
-          </div>
+              </Slider>
+            </div>
+          )}
         </div>
       </div>
       <div className="col-lg-2"></div>

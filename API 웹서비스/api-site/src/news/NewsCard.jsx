@@ -1,17 +1,21 @@
 import React from "react";
 import "./News.css";
 
-const NewsCard = ({ src, title, author, article }) => {
+const NewsCard = ({ src, title, author, url }) => {
   return (
-    <div className="NewsBoxRow">
-      <div>
-        <img className="NewsCardSize" src={src} />
+    <>
+      <div className="NewsBoxRow">
+        <div>
+          <img className="NewsCardImgSize" src={src} />
+        </div>
+        <a href={url}>
+          <div className="row">
+            <h5 className="titleWrap">{title}</h5>
+            <h6 className="author">출처 {author}</h6>
+          </div>
+        </a>
       </div>
-      <div className="row">
-        <h5 className="titleWrap">{title}</h5>
-        <h6>{author}</h6>
-      </div>
-    </div>
+    </>
   );
 };
 
