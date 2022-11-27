@@ -1,0 +1,57 @@
+.StockInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2px 5% 2px 1%;
+  border: 1px solid #ccc;
+}
+.StockName {
+  color: black;
+  margin: 1% 5%;
+  width: 15vw;
+  font-size: 15px;
+}
+.StockPrice {
+  margin-bottom: 0px;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ccc;
+}
+.StockChart {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inputStyle {
+  margin-left: 43%;
+  width: 30vw;
+  height: 60px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 40px;
+  outline: none;
+  padding: 40px;
+  margin-bottom: 20px;
+  background-color: rgb(233, 233, 233);
+}
+.StockPrice p {
+  color: black;
+  margin-bottom: 3px;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.StockPrice p span {
+  margin-left: 7%;
+  font-size: 15px;
+}
+#StockPrice1 {
+  display: flex;
+  justify-content: center;
+}
+#StockPrice1:hover {
+  cursor: pointer;
+}

@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <>
       {/*   어두운 화면 전환 버튼 구현  */}
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="row">
         <Weather />
         <News />
@@ -21,10 +21,10 @@ const Main = () => {
         <Chart />
         {/* <Ranking /> */}
       </div>
-      <div className="justCenter">
+      {/* <div className="justCenter">
         <RecommandItem />
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 };
