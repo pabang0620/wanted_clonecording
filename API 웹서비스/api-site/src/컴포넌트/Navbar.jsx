@@ -6,12 +6,10 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="col-lg-1"></div>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            {/* <img
-              src={process.env.PUBLIC_URL + "../../public/Imgfile/api-site.png"}
-            /> */}
+          {/* <a className="navbar-brand" href="#">
+            <img src={process.env.PUBLIC_URL + "/Imgfile/api-site.png"} />
             API-PAGE
-          </a>
+          </a> */}
           <button
             className="navbar-toggler"
             type="button"

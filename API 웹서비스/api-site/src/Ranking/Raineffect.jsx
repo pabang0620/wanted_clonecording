@@ -1,7 +1,7 @@
 import React from "react";
 
-const RecommandItem = () => {
+const Raineffect = () => {
   return <div className="recommanditem"></div>;
 };
 
-export default RecommandItem;
+export default Raineffect;

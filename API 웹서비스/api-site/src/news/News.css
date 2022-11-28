@@ -1,67 +1,60 @@
 .NewsBox {
-  height: 100px;
-  width: 33vw;
+  height: 300px;
+  width: 20vw;
   border-radius: 7px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-
+  z-index: 70;
   /* display: flex; */
   /* flex-direction: row; */
 }
 .NewsCardMain {
-  height: 100px;
+  height: 300px;
   display: flex;
   flex-direction: row;
 }
 
 .NewsCardImgSize {
-  height: 100px;
-  width: 15vw;
+  height: 180px;
+  width: 20vw;
   object-fit: cover;
 }
 .NewsBoxRow {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background-color: white;
 }
 .titleWrap {
   font-size: 15px;
   width: 18vw;
-  height: 50px;
+  height: 70px;
   flex-wrap: wrap;
+  margin-top: 10px;
+  color: black;
+}
+.NewsBox {
+  position: fixed;
+  top: 60%;
+  right: 50px;
 }
 .author {
-  font-size: 8px;
+  font-size: 12px;
   width: 18vw;
   height: 20px;
   flex-wrap: wrap;
+  color: black;
 }
 .slick-list {
-  height: 100px;
-  width: 34vw;
-  background-image: linear-gradient(90deg, #5f584c -12%, white 200%);
+  height: 300px;
+  width: 80vw;
+
   border-radius: 7px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 a {
   text-decoration: none;
 }
 @media screen and (max-width: 992px) {
   .slick-list {
-    width: 100vw;
-  }
-  .NewsBox {
-    width: 95vw;
-  }
-  .NewsBoxRow a {
     width: 50vw;
-  }
-  .row {
-    width: 50vw;
-  }
-  .NewsCardImgSize {
-    width: 50vw;
-  }
-  .titleWrap {
-    width: 40vw;
+    height: 100px;
   }
 }

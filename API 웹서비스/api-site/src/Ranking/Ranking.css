@@ -9,21 +9,12 @@
 /* 나중에 스크롤 css 변경으로 구현 */
 /* 장바구니 박스  */
 .mainbox_style {
-  height: 900px;
   margin-left: 17%;
   display: flex;
   flex-direction: row;
   justify-content: left;
 }
 /* flex디렉션 로우 */
-.StockChart {
-  height: 900px;
-  width: 67.5vw;
-  border: 1px solid #e2e2e2;
-  border-radius: 5px;
-  margin-right: 2vw;
-}
-
 @media screen and (max-width: 992px) {
   .StockChart {
     height: auto;

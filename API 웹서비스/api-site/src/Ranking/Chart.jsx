@@ -5,12 +5,12 @@ import StockCard from "./StockCard";
 
 const Chart = () => {
   const [stockdata, setstockdata] = useState({});
-  const [stockName, setstockName] = useState({});
+  const [stockName, setstockName] = useState("");
 
   const API_KEY =
     "1HiE%2BL6AwxZjwHc1aVPJhQ%2B8wyhNESwyGp5vsbBK%2FsootMiyox%2BCKnjQ8Re%2FoNQPef0QAdWKgI6LWQxmfEOtLQ%3D%3D";
 
-  const url = `https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo?serviceKey=${API_KEY}&numOfRows=10&likeItmsNm=${stockName}&resultType=json`;
+  const url = `https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo?serviceKey=${API_KEY}&numOfRows=20&likeItmsNm=${stockName}&resultType=json`;
 
   const stockDataAll = async (e) => {
     if (e.key === "Enter") {
@@ -20,7 +20,6 @@ const Chart = () => {
           url: url,
         });
         setstockdata(stockdata);
-        console.log(stockdata);
       } catch (err) {
         alert(err);
       }
@@ -31,6 +30,7 @@ const Chart = () => {
   }, []);
   return (
     <div className="col-lg-6">
+      <div className="StockBoxStyle"></div>
       <input
         className="inputStyle"
         type="text"
@@ -39,9 +39,10 @@ const Chart = () => {
         value={stockName}
         onKeyDown={stockDataAll}
       />
-      <div className="StockChart">
-        {Object.keys(stockdata).length !== 0 && (
-          <div className="SotckCardAll">
+
+      {Object.keys(stockdata).length !== 0 && (
+        <div className="StockChart">
+          <div className="StockCardAll">
             {stockdata.data.response.body.items.item.map((stockAll) => (
               <StockCard
                 key={stockAll.isinCd}
@@ -57,8 +58,8 @@ const Chart = () => {
               />
             ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

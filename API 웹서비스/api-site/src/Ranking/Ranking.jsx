@@ -7,17 +7,20 @@ const Ranking = () => {
   const API_KEYID = "19nM5sB1J21v5O0EjLcy";
   const API_KEYPW = "46zcfaGNqV";
 
-  const url = "https://openapi.naver.com/v1/datalab/search";
+  const url = "/api/v1/datalab/search";
 
   const rankingdataAll = async () => {
     try {
-      const weathersdata = await axios.get("/v1/datalab/search", {
+      const weathersdata = await axios({
+        method: "GET",
+        url: url,
         headers: {
-          "X-Naver-Client-Id": "19nM5sB1J21v5O0EjLcy",
-          "X-Naver-Client-Secret": "46zcfaGNqV",
+          "X-Naver-Client-Id": API_KEYID,
+          "X-Naver-Client-Secret": API_KEYPW,
         },
       });
-      setrankingdata(weathersdata);
+      setrankingdata(rankingdata);
+      console.log(rankingdata);
     } catch (err) {
       alert(err);
     }

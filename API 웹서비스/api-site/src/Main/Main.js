@@ -5,24 +5,31 @@ import "./Main.css";
 import Navbar from "../컴포넌트/Navbar";
 import Chart from "../Ranking/Chart";
 import Ranking from "../Ranking/Ranking";
-import RecommandItem from "../Ranking/RecommandItem";
+import Raineffect from "../Ranking/Raineffect";
 import Footer from "../컴포넌트/Footer";
+import { useState } from "react";
 
 const Main = () => {
+  const [newsModal, setNewsModal] = useState(false);
+  const openModal = () => {
+    setNewsModal(true);
+    if (newsModal) {
+      setNewsModal(false);
+    }
+  };
   return (
     <>
-      {/*   어두운 화면 전환 버튼 구현  */}
+      <button onClick={openModal} className="newsModalButton">
+        뉴스
+      </button>
+      {newsModal === true && <News />}
       {/* <Navbar /> */}
-      <div className="row">
-        <Weather />
-        <News />
-      </div>
-      <div className="mainbox_style">
-        <Chart />
-        {/* <Ranking /> */}
-      </div>
+      <Weather />
+
+      <Chart />
+      {/* <Ranking /> */}
       {/* <div className="justCenter">
-        <RecommandItem />
+        <Raineffect />
         <Footer />
       </div> */}
     </>

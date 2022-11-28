@@ -9,7 +9,7 @@ const NewsCard = ({ src, title, author, url }) => {
           <img className="NewsCardImgSize" src={src} />
         </div>
         <a href={url}>
-          <div className="row">
+          <div className="colum">
             <h5 className="titleWrap">{title}</h5>
             <h6 className="author">출처 {author}</h6>
           </div>

@@ -1,15 +1,16 @@
-.colum {
-  border: 3px solid white;
-  padding: 5px;
-  margin: 0px 10px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+.backgroundimg {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  filter: blur(2px);
+  object-fit: cover;
+  z-index: 10;
 }
 .WeatherPlace {
   display: flex;
   justify-content: center;
-  border: 3px solid;
   color: white;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 /* 폰트어썸아이콘 색상 */
 .fa-solid.fa-cloud {
@@ -19,28 +20,45 @@
   color: #99bdf5;
 }
 .fa-solid.fa-cloud-showers-heavy {
-  color: bisque;
+  color: white;
 }
 .fa-solid.fa-sun {
   color: yellow;
 }
-/* 폰트어썸아이콘 색상 끝  */
-.accordion-button.collapsed {
-  justify-content: center;
+
+.weatherInputStyle {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(233, 233, 233);
+}
+.colum {
+  padding: 5px;
+  margin: 0px 10px;
+  color: white;
+  z-index: 30;
+  font-size: 23px;
+}
+.weatherBoxsize {
+  width: 100vw;
   display: flex;
+  align-items: center;
+  justify-content: right;
 }
-/* 아코디언 클릭시 배경색상 */
-.accordion-button {
-  background-image: linear-gradient(90deg, #292d30 -12%, white 200%);
-  --bs-accordion-active-color: black !important;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-}
-.accordion-button::after {
-  z-index: 20;
+.weatherBox {
+  height: 100px;
+  width: 100vw;
+  border-radius: 7px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 992px) {
-  .accordion-button {
-    width: 95vw;
+  .weatherBox {
+    width: 100vw;
+    margin-bottom: 5%;
   }
 }

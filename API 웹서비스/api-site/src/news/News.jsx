@@ -35,7 +35,7 @@ const News = () => {
   }, []);
   return (
     <>
-      <div className="col-lg-4">
+      <div className="justCenter">
         <div className="NewsBox">
           {Object.keys(technologyNewsdata).length !== 0 && (
             <div className="NewsCardMain">
@@ -55,7 +55,6 @@ const News = () => {
           )}
         </div>
       </div>
-      <div className="col-lg-2"></div>
     </>
   );
 };

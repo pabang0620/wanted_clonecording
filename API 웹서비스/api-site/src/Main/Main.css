@@ -38,3 +38,15 @@
   height: 500px;
   border: 1px solid #e2e2e2;
 }
+.blankbox {
+  width: 10vw;
+}
+.newsModalButton {
+  border: none;
+  background: none;
+  color: white;
+  position: fixed;
+  top: 92%;
+  right: 50px;
+  z-index: 30;
+}

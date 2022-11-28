@@ -1,5 +1,4 @@
 import React from "react";
-import "./StockCard.css";
 import { useState } from "react";
 
 const StockCard = ({ itmsNm, hipr, lopr, mkp, vs, trqu, basDt }) => {
@@ -24,7 +23,7 @@ const StockCard = ({ itmsNm, hipr, lopr, mkp, vs, trqu, basDt }) => {
       <div className="StockCard">
         <div className="StockInfo">
           <h5 className="StockName">{itmsNm}</h5>
-          <div>날짜{basDt}</div>
+          <h5>{basDt}</h5>
           <h6 className="StockPrice">
             <p onClick={showPriceAll} id="StockPrice1">
               종가 {number1}
