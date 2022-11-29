@@ -47,14 +47,13 @@ const Chart = () => {
               <StockCard
                 key={stockAll.isinCd}
                 itmsNm={stockAll.itmsNm}
-                hipr={stockAll.hipr}
+                // hipr={stockAll.hipr}
                 mkp={stockAll.mkp}
-                lopr={stockAll.lopr}
-                vs={stockAll.vs}
-                trqu={stockAll.trqu}
+                // lopr={stockAll.lopr}
+                // vs={stockAll.vs}
+                // trqu={stockAll.trqu}
                 basDt={stockAll.basDt}
-
-                // vs={stockAll.vs.includes("-") !== true ? stockAll.vs : null}
+                // 온클릭 차트 열기
               />
             ))}
           </div>

@@ -6,6 +6,7 @@
   filter: blur(2px);
   object-fit: cover;
   z-index: 10;
+  /* display: none; */
 }
 .WeatherPlace {
   display: flex;
