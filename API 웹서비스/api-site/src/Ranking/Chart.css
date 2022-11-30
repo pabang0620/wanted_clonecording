@@ -16,11 +16,11 @@
   width: 10px;
 }
 .inputStyle {
-  border: 1px solid #333;
+  border: none;
   position: fixed !important;
   top: 17%;
   width: 20vw;
-  right: 40%;
+  right: 50%;
   height: 30px;
   font-size: 20px;
   border-radius: 40px;
@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 2px 0px 2px 1%;
   border: 1px solid #ccc;
 }

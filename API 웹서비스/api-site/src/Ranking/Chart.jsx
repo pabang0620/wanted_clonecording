@@ -20,6 +20,7 @@ const Chart = () => {
           url: url,
         });
         setstockdata(stockdata);
+        console.log(stockdata);
       } catch (err) {
         alert(err);
       }
@@ -39,26 +40,28 @@ const Chart = () => {
         value={stockName}
         onKeyDown={stockDataAll}
       />
-
-      {Object.keys(stockdata).length !== 0 && (
-        <div className="StockChart">
-          <div className="StockCardAll">
+      <div className="StockChart">
+        {Object.keys(stockdata).length !== 0 && (
+          <div>
             {stockdata.data.response.body.items.item.map((stockAll) => (
-              <StockCard
-                key={stockAll.isinCd}
-                itmsNm={stockAll.itmsNm}
-                // hipr={stockAll.hipr}
-                mkp={stockAll.mkp}
-                // lopr={stockAll.lopr}
-                // vs={stockAll.vs}
-                // trqu={stockAll.trqu}
-                basDt={stockAll.basDt}
-                // 온클릭 차트 열기
-              />
+              <div>
+                <StockCard
+                  key={stockAll.isinCd}
+                  itmsNm={stockAll.itmsNm}
+                  hipr={stockAll.hipr}
+                  mkp={stockAll.mkp}
+                  lopr={stockAll.lopr}
+                  // vs={stockAll.vs}
+                  // trqu={stockAll.trqu}
+                  basDt={stockAll.basDt}
+                  // 온클릭 차트 열기
+                  stockdata={stockdata}
+                />
+              </div>
             ))}
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
