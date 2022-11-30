@@ -5,8 +5,13 @@ import ImgAds from "./ImgAds";
 import InfoImgNewsall from "./InfoImgNewsall";
 import dummy from "../data.json";
 import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const InfoMain = () => {
+  const navigate = useNavigate();
+  const gotoBookmark = () => {
+    navigate("/profile/bookmarks");
+  };
   const [ScrollY, setScrollY] = useState(0); // window 의 pageYOffset값을 저장
   const [ScrollActive, setScrollActive] = useState(false);
   function handleScroll() {
@@ -95,8 +100,7 @@ const InfoMain = () => {
       <div>
         <div className="TitleCenterall">
           <div className="TitleCentero">
-            <button className="TitleCenter_button">
-              {" "}
+            <button onClick={gotoBookmark} className="TitleCenter_button">
               <i className="fa-solid fa-bookmark"></i> &nbsp;&nbsp;&nbsp;북마크
               모아보기
             </button>

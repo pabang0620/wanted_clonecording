@@ -3,15 +3,24 @@ body {
   width: 100vw;
   font-family: "Pretendard-Regular";
 }
+a:hover {
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+}
 .slick-slider {
-  width: 1180px;
+  width: 65vw;
   height: 300px;
 }
 .slick-slider div {
   display: flex;
 }
 .slick-slider img {
-  width: 1180px;
+  width: 65vw;
+}
+.secondSlick {
+  height: 45px;
 }
 @font-face {
   font-family: "Pretendard-Regular";
@@ -415,4 +424,40 @@ footer {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+.mainImg_box {
+  position: relative;
+  bottom: 35%;
+  left: 2%;
+  border: 1px solid #e1e2e3;
+  width: 330px;
+  height: 145.99px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.mainImg_boxTitle {
+  font-size: 20px;
+  font-family: "pretendard-regular";
+  font-weight: 600;
+  height: 30px;
+  margin: 20px 20px 0px;
+}
+.mainImg_boxArticle {
+  font-size: 14px;
+  font-family: "pretendard-regular";
+  color: #333333;
+  height: 43.99px;
+  padding: 0px 20px;
+  border-bottom: 1px solid #e1e2e3;
+}
+.mainImg_boxButton {
+  height: 40px;
+  margin: 6px 0px 0px 13px;
+  background-color: white;
+  font-size: 14px;
+  font-family: "pretendard-regular";
+  color: #3366ff;
+  font-weight: 600;
 }

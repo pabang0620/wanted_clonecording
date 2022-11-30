@@ -296,7 +296,7 @@
     },
     {
       "id": 3,
-      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20220401%2F8%2F41081144.jpg&w=500&q=75",
+      "src": "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2F4Oxh%2Fimage%2FRiQUgzcNBHS4wKsFoaF-zHDxyr8.png&w=750&q=100",
       "title": "데이터가 흐르는 회사 만들기 with 앰플리튜드 - 성여운",
       "article": "엠플리튜드를 활용해 '데이터가 흐르는 원티드'를 만들어나가고 있는 원티드...",
       "from": "원티드랩 성여운"
@@ -390,10 +390,44 @@
     {
       "id": 0,
       "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F27167%2F85boykpji4sg7qgc__1080_790.jpg&w=1000&q=75"
+    }
+  ],
+  "mainBigimg": [
+    {
+      "id": 0,
+      "title": "개발자 포함 전 직군 적극 채용 중!",
+      "article": "콘텐츠 / 커머스 스타트업!",
+      "tag": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1803%2F0907f393.jpg&w=1060&q=100"
     },
     {
       "id": 1,
-      "src": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F36292%2Feyeahn8rgihhi6si__1080_790.jpg&w=400&q=75"
+      "title": "서울핀테크랩 추천기업 '공동채용'",
+      "article": "혁신 금융을 이끄는 스타트업을 소개 합니다.",
+      "tag": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1891%2Fac060cc4.jpg&w=1060&q=100"
+    },
+    {
+      "id": 2,
+      "title": "벤처기업협회 추천기업 공동채용",
+      "article": "우리나라를 이끌어가는 벤처기업을 소개 합니다!",
+      "tag": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1842%2F356a7eb1.jpg&w=1060&q=100"
+    },
+    {
+      "id": 3,
+      "title": "국내 유일 슈즈테크 스타트업",
+      "article": "개발자 포함 전 직군 적극 채용 중!",
+      "tag": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1866%2F75990d2b.jpg&w=1060&q=100"
+    },
+    {
+      "id": 4,
+      "title": "wadiz 부문별 경력/신입 채용",
+      "article": "누구나 도전할 수 있는 세상을 만듭니다.",
+      "tag": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1896%2F1b047fdb.jpg&w=1060&q=100"
+    },
+    {
+      "id": 5,
+      "title": "택스테크 스타트업 '삼쩜삼'",
+      "article": "개발자 포함 전 직군 적극 채용 중!",
+      "tag": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1422%2Fb4a42a0f.jpg&w=1060&q=100"
     }
   ]
 }

@@ -9,14 +9,11 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 
 const Navybar = () => {
-  const navigate = useNavigate();
   const LoginStatus = useSelector((state) => state.reducer.naviLoginstatus);
-  const gotoPage = () => {
+  const navigate = useNavigate();
+  const gotopage = () => {
     alert("채용 상세페이지로 이동");
     navigate("/page/0");
-  };
-  const gotoBookmark = () => {
-    navigate("/profile/bookmarks");
   };
   return (
     <div>
@@ -31,7 +28,7 @@ const Navybar = () => {
             </div>
 
             <div className="nav_menu">
-              <div onClick={gotoPage}>
+              <div onClick={gotopage}>
                 <li>
                   <a className="displayblock">채용</a>
                 </li>
@@ -57,7 +54,7 @@ const Navybar = () => {
 
                 <li id="nothing">|</li>
                 <li id="service">
-                  <button onClick={gotoBookmark}>기업 서비스</button>
+                  <button>기업 서비스</button>
                 </li>
               </ul>
             </div>

@@ -32,11 +32,14 @@ const MainBody = () => {
       <section className="section1">
         <div className="first_image">
           <Slider {...settings}>
-            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1803%2F0907f393.jpg&w=1060&q=100" />
-            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1825%2Fb93ecf4e.jpg&w=1060&q=100" />
-            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" />
-            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1853%2F2464b111.jpg&w=1060&q=100" />
-            <FirstBigImg tag="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1852%2F41073f1a.jpg&w=1060&q=100" />
+            {dummy.mainBigimg.map((mainImgbox) => (
+              <FirstBigImg
+                ket={mainImgbox.id}
+                tag={mainImgbox.tag}
+                title={mainImgbox.title}
+                article={mainImgbox.article}
+              />
+            ))}
           </Slider>
         </div>
       </section>

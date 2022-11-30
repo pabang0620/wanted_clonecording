@@ -67,6 +67,9 @@ button:hover {
   .join a {
     display: none;
   }
+  .join:hover {
+    cursor: pointer !important;
+  }
   .mediaJoin {
     display: block;
     border: 1px solid #3366ff;
@@ -198,7 +201,7 @@ button:hover {
 .big_pha_img_set {
   width: 700px;
   height: 490px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .big_pha_second {
   margin: 40px 0px 30px;

@@ -1,8 +1,13 @@
 import React from "react";
 import "./LogoutModal.css";
 import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 const LogoutModal = () => {
+  const navigate = useNavigate();
+  const gotoBookmark = () => {
+    navigate("/profile/bookmarks");
+  };
   const dispatch = useDispatch();
 
   const Logout = () => {
@@ -21,7 +26,7 @@ const LogoutModal = () => {
             <li>지원현황</li>
             <li>제안받기 현황</li>
             <li>좋아요</li>
-            <li>북마크</li>
+            <li onClick={gotoBookmark}>북마크</li>
             <li id="LogoutModalLine"></li>
             <li>추천</li>
             <li>포인트</li>
