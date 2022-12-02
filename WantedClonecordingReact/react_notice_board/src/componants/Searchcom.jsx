@@ -10,7 +10,7 @@ const Searchcom = () => {
   return (
     <div className="SearchIcon">
       <a onClick={SearchOn}>
-        <i className="fa-solid fa-magnifying-glass"></i>
+        <i id="searchIcon" className="fa-solid fa-magnifying-glass"></i>
       </a>
       {SearchModalon === true ? (
         <Searchmodal setSearchModalon={setSearchModalon} />

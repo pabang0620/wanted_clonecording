@@ -13,7 +13,7 @@ const StockCard = ({ itmsNm, mkp, basDt, stockdata, lopr, hipr }) => {
   };
   // 000당 콤마
   const number1 = mkp.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
+  console.log([lopr]);
   return (
     <>
       <div onClick={showPriceAll} className="StockInfo">
@@ -23,24 +23,22 @@ const StockCard = ({ itmsNm, mkp, basDt, stockdata, lopr, hipr }) => {
       {priceAll === true && (
         <div>
           <ApexCharts
-            type="line"
-            series={[{ name: "주식 금액", data: [lopr, hipr, mkp] }]}
+            lopr={lopr}
+            type="bar"
+            series={[
+              { name: "최저가", data: [lopr] },
+              { name: "최고가", data: [hipr] },
+              { name: "종가", data: [mkp] },
+            ]}
+            height="200%"
+            width="98%"
             options={{
-              chart: {
-                height: 300,
-                width: 300,
-              },
               xaxis: {
                 categories: ["최저가", "최고가", "종가"],
               },
-              // yaxis: {
-              //   categories: [
-              //     lopr - (lopr * 20) / 100,
-              //     lopr - (lopr * 15) / 100,
-              //     lopr - (lopr * 10) / 100,
-              //     lopr - (lopr * 5) / 100,
-              //   ],
-              // },
+              yaxis: {
+                min: parseInt(lopr) - lopr / 10,
+              },
             }}
           />
         </div>

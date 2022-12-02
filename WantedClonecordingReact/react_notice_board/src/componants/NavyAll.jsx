@@ -49,7 +49,7 @@ const Navybar = () => {
 
             <div className="nav_service">
               <Searchcom />
-              <ul>
+              <ul className="nav_service_nothing">
                 {LoginStatus === true ? <Modalon2 /> : <Modalon />}
 
                 <li id="nothing">|</li>

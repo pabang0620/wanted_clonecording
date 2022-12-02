@@ -23,16 +23,14 @@ const Modalon = () => {
   };
 
   return (
-    <li className="join">
-      <a>
-        <i class="fa-regular fa-bell"></i>
-        <i
-          onClick={ShowlogoutModal}
-          id="profile"
-          class="fa-solid fa-circle-user"
-        ></i>
-        {LoginModalStatus === true ? <LogoutModal /> : null}
-      </a>
+    <li>
+      <i id="bell" className="fa-regular fa-bell"></i>
+      <i
+        onClick={ShowlogoutModal}
+        id="profile"
+        className="fa-solid fa-circle-user"
+      ></i>
+      {LoginModalStatus === true ? <LogoutModal /> : null}
       {ModalPageopen && <ModalPage setModalPageopen={setModalPageopen} />}
     </li>
   );

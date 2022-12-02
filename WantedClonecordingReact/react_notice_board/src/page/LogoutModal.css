@@ -1,6 +1,7 @@
 .LogoutModal {
+  margin-top: 15px;
   padding: 14px 0px 0px;
-  width: 192px;
+  width: 207px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -36,7 +37,7 @@
   width: 14px;
   border-top-right-radius: 30%;
   -webkit-transform: rotate(-55deg) skewX(-20deg);
-  transform: translateX(200%) translateY(55%) rotate(-55deg) skewX(-20deg);
+  transform: translateX(240%) translateY(55%) rotate(-55deg) skewX(-20deg);
 }
 .graycolor {
   background-color: #ececec;
@@ -48,4 +49,22 @@
   height: 0.5px;
   background-color: #ececec;
   padding: 0.5px;
+}
+#bell {
+  transform: translateY(-8%);
+  margin: 0px 12px 2px 12px;
+  font-size: 20px;
+}
+#profile {
+  color: #ececec;
+  font-size: 30px;
+}
+.nav_service_nothing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#searchIcon {
+  font-size: 18px;
+  margin-right: 5px;
 }

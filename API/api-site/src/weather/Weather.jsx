@@ -75,7 +75,7 @@ const Weather = () => {
                 sun.main === "Clear" && (
                   <img
                     className="backgroundimg"
-                    src="https://thumb.photo-ac.com/94/948795c5b7829855d38ff0360eef7c4d_t.jpeg"
+                    src="https://mblogthumb-phinf.pstatic.net/MjAxODA3MDZfMjIw/MDAxNTMwODU0ODEzMTA1.5MUQPUyeoHbvJdRMC3p50OMZFqkHtYkj_Qy-kII2VhIg.PUP_vRZrwTsjtHyOBPBYBi6cMuC86i9omE1oQNxNxXQg.JPEG.ggvjf03278/1.jpg?type=w800"
                     alt="안개"
                   ></img>
                 )

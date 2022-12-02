@@ -92,7 +92,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-left: 40px;
 }
 .main img {
   background-image: url("");
@@ -128,26 +127,26 @@ button:hover {
   border-bottom: 1.5px solid gray;
   cursor: pointer;
 }
-.nav_service ul {
-  align-items: center;
-  padding: 0px 10px;
-  margin: 16px 0px 10px 0px;
-}
-.nav_service li {
-  display: inline-block;
-  width: auto;
-}
-.nav_service {
-  display: flex;
-}
-.nav_service i {
-  margin-top: 10px;
+.join {
+  width: 110px;
 }
 .nav_service button {
   padding: 0px 5px;
   border: none;
   background-color: white;
   cursor: pointer;
+  height: 30px;
+  width: 89px;
+}
+.nav_service {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 20%;
+}
+
+.nav_service ul {
+  padding: 0px;
 }
 @media screen and (max-width: 830px) {
   .nav_menu_a {
@@ -1138,4 +1137,11 @@ modal_second */
   justify-content: center;
   display: flex;
   font-size: 30px;
+}
+#buttonTagmini1 {
+  transform: translateX(30%);
+}
+
+#buttonTagmini2 {
+  transform: translateX(80%);
 }

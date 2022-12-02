@@ -141,10 +141,10 @@ const MainBody = () => {
             </il>
           </ul>
           <div className="button_tag">
-            <button>
+            <button id="buttonTagmini1">
               <span>온라인</span>
             </button>
-            <button>
+            <button id="buttonTagmini2">
               <span>아티클</span>
             </button>
           </div>
