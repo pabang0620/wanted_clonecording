@@ -5,3 +5,73 @@
   justify-content: center;
   align-items: center;
 }
+.resumecenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+}
+.resumeFilecenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.flexbaseline {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+.resumeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  width: 24%;
+  height: 188px;
+  margin-right: 2%;
+  border-radius: 2px;
+  flex-direction: column;
+}
+.resumeBox p {
+  font-size: 16px;
+  font-family: "pretendard-regular";
+  font-weight: 600;
+}
+.resumeBoxIcon i {
+  color: white;
+}
+.resumeBoxIcon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background-color: #3366ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeBoxIcon2 {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background-color: rgb(224, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduceResume {
+  font-size: 18px;
+  color: #3366ff;
+  font-weight: 600;
+}
+.introduceResume i {
+  margin-left: 8px;
+  color: #3366ff;
+  background-color: white;
+}
