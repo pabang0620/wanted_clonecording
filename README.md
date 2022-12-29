@@ -43,7 +43,7 @@ React / - Wanted 클론코딩
 
 ##### Nov 21th ~ Nov 27th
 
-API
+API - 주식 날씨 뉴스 등
 React / - Wanted 클론코딩
 
 ##### Nov 28th ~ Dec 2nd
