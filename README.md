@@ -1,51 +1,40 @@
-# 개발노트
+# 개발 성장 과정
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=lwh497)](https://solved.ac/lwh497)<br/>
 
-  <img src="http://mazandi.herokuapp.com/api?handle=lwh497&theme=warm"/>
-  
-  
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pabang0620)](https://github.com/pabang0620/github-readme-stats)
-  
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
-
-### Oct 3rd ~ Dec 2nd
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pabang0620)](https://github.com/pabang0620/github-readme-stats)
 
 ---
 
-##### Oct 3rd ~ Oct 9th
+## Oct 3rd ~ Dec 2nd Wanted 클론 코딩
 
-HTML CSS - Wanted 클론코딩
+HTML CSS JS <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/> - WantedCloneReact
 
-##### Oct 10th ~ Oct 16th
+Redux, reacthooks, media queries, and styled-component
 
-HTML CSS JS - Wanted 클론코딩
+---
 
-##### Oct 17rd ~ Oct 23th
+## Nov 21th ~ Nov 27th API SideProject
 
-React / - Wanted 클론코딩
+주식 날씨 뉴스 등 공공데이터 사용 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/> - API
 
-##### Oct 24rd ~ Oct 30th
+RestAPI, Slick-slider
 
-React / - Wanted 클론코딩
+---
 
-##### Oct 31rd ~ Nov 6th
+## Dec 2nd ~ Jan 10th Server
 
-React / - Wanted 클론코딩
+AWS로 EC2, RDS, S3 인스턴스 생성, MySQL 프로그래머스 고득점 Kit, ERD 설계, Java 입문, 스트링부트 API 개발
 
-##### Nov 7th ~ Nov 13th
+---
 
-React / - Wanted 클론코딩
+## Jan 16th ~ Jan 29th - GridgeTest(너디너리 주관)
 
-##### Nov 14th ~ Nov 20th
+인스타그램 클론 코딩 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/> - 그릿지테스트
+/stargram 으로 접속
 
-React / - Wanted 클론코딩
+---
 
-##### Nov 21th ~ Nov 27th
+## Jan 30th ~ Mar 7th 스타트업 인턴
 
-API - 주식 날씨 뉴스 등
-React / - Wanted 클론코딩
-
-##### Nov 28th ~ Dec 2nd
-
-React / - Wanted 클론코딩
+앨리스 헬스케어 Admin 페이지 제작 NextJS, Recoil, Tailwindcss, styled-jsx, tRPC - weelo-kids-admin
