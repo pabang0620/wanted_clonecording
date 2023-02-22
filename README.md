@@ -2,8 +2,6 @@
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=lwh497)](https://solved.ac/lwh497)<br/>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pabang0620)](https://github.com/pabang0620/github-readme-stats)
-
 ---
 
 ## Oct 3rd ~ Dec 2nd Wanted 클론 코딩
