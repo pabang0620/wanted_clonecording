@@ -35,4 +35,6 @@ AWS로 EC2, RDS, S3 인스턴스 생성, MySQL 프로그래머스 고득점 Kit,
 
 ## Jan 30th ~ Mar 7th 스타트업 인턴
 
-앨리스 헬스케어 Admin 페이지 제작 NextJS, Recoil, Tailwindcss, styled-jsx, tRPC - weelo-kids-admin
+앨리스 헬스케어 Admin 페이지 제작 NextJS, Recoil, Tailwindcss, styled-jsx, tRPC, react-query - weelo-kids-admin (기업보안문제로 git에 push하지 않음)
+
+개인노션 개발일지 :   https://www.notion.so/0d8190dfeee34087b315bbb4ad09d808
