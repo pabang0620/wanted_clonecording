@@ -43,3 +43,5 @@ AWS로 EC2, RDS, S3 인스턴스 생성, MySQL 프로그래머스 고득점 Kit,
 기업 프로젝트로 만들었던 페이지를 시연하고 어떤 기술스택을 사용했는지 설명함 
 
 개인노션 개발일지 :   https://www.notion.so/0d8190dfeee34087b315bbb4ad09d808
+노션 포트폴리오 : https://www.notion.so/38de94fe8fa741049d3dd00a3c8170ef
+포트폴리오 페이지 : 
