@@ -8,7 +8,7 @@ HTML CSS JS <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=
 
 Redux, reacthooks, media queries, and styled-component
 
----
+
 
 ## Nov 21th ~ Nov 27th API 사이드 프로젝트
 
