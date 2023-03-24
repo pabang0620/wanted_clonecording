@@ -17,14 +17,14 @@ Redux, reacthooks, media queries, and styled-component
 RestAPI, Slick-slider
 
 
----
+
 
 ## Dec 2nd ~ Jan 10th 서버 
 
 AWS로 EC2, RDS, S3 인스턴스 생성, MySQL 프로그래머스 고득점 Kit, ERD 설계, Java 입문, 스트링부트 API 개발
 
 
----
+
 
 ## Jan 16th ~ Jan 29th - GridgeTest(너디너리 주관)
 
@@ -32,7 +32,7 @@ AWS로 EC2, RDS, S3 인스턴스 생성, MySQL 프로그래머스 고득점 Kit,
 /stargram 으로 접속
 
 
----
+
 
 ## Jan 30th ~ Mar 7th 스타트업 인턴
 
